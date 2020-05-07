@@ -2,3 +2,8 @@
 node_modules
 package-lock.json
 yarn.lock
+
+public/index.html
+public/assets
+public/public
+.idea/

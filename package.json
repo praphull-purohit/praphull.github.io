@@ -1,8 +1,10 @@
 {
   "name": "praphull.github.io",
   "version": "1.0.0",
+  "repository": "https://github.com/praphull/praphull.github.io",
+  "license": "Apache-2.0",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c --environment BUILD:production",
     "dev": "rollup -c -w",
     "start": "sirv public"
   },
@@ -17,11 +19,7 @@
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0",
-    "svelte-preprocess": "^3.7.4"
-  },
-  "dependencies": {
-    "sirv-cli": "^0.4.4",
-    "bulma": "^0.8.2",
-    "@fortawesome/fontawesome-free": "^5.13.0"
+    "svelte-preprocess": "^3.7.4",
+    "sirv-cli": "^0.4.4"
   }
 }

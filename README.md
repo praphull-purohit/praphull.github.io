@@ -21,4 +21,11 @@ Build the JS and CSS to assets directory
 npm run build
 ```
 
-Browse to the source code directory and open index.html in a browser
+To develop/test locally, create symlinks to _index.html_, _assets_ directory and _public_ directory in your public directory
+
+```bash
+cd public
+ln -s ../index.html index.html
+ln -s ../public public
+ln -s ../assets assets
+```
