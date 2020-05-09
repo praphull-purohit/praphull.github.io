@@ -1,5 +1,5 @@
 <script>
-  import Hero from './Hero.svelte';
+  import NavBar from './NavBar.svelte';
   import Intro from './Intro.svelte';
   /*import Summary from './Summary.svelte'; */
   import Employment from './Employment.svelte';
@@ -9,7 +9,7 @@
   import Footer from './Footer.svelte';
 </script>
 
-<Hero/>
+<NavBar/>
 <Intro/>
 <!--
 <Summary/>

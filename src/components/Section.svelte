@@ -3,7 +3,7 @@
 	export let title;
 
 </script>
-<section class="section">
+<section class="section condensed-section">
   <div class="container">
     <div class="columns">
       <div class="column is-one-third is-size-4">

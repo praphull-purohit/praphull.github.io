@@ -3,7 +3,10 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
-import sveltePreprocess from 'svelte-preprocess'
+//import sveltePreprocess from 'svelte-preprocess'
+import { scss } from 'svelte-preprocess'
+//import scss from 'rollup-plugin-scss';
+//import { sass } from 'svelte-preprocess-sass';
 
 const production = !process.env.ROLLUP_WATCH || process.env.BUILD == 'production';
 
@@ -20,15 +23,27 @@ export default {
 			// enable run-time checks when not in production
 			dev: !production,
 
-			preprocess: sveltePreprocess({
+			/*preprocess: sveltePreprocess({
               transformers: {
-                scss: {
+                sass: {
                   includePaths: [
-                    'src/css/app.scss'
+                    'src/scss/theme.scss'
                   ]
                 }
               }
-            }),
+            }),*/
+
+            preprocess: [
+              scss({
+//                includePaths: [
+//                  'src/sass/theme.sass'
+//                ]
+              })
+            ],
+
+            /*preprocess: {
+              style: sass(),
+            },*/
 
 			// we'll extract any component CSS out into
 			// a separate file - better for performance
@@ -36,6 +51,31 @@ export default {
 				css.write('assets/css/app.css');
 			}
 		}),
+
+		/*scss({
+          // Choose *one* of these possible "output:..." options
+          // Default behaviour is to write all styles to the bundle destination where .js is replaced by .css
+          output: true,
+
+          // Filename to write all styles to
+          output: 'assets/css/bundle.css',
+
+          // Disable any style output or callbacks, import as string
+          output: false,
+
+          // Determine if node process should be terminated on error (default: false)
+          failOnError: true,
+
+          // Prefix global scss. Useful for variables and mixins.
+          //prefix: `@import "./fonts.scss";`,
+
+          // Use a node-sass compatible compiler (default: node-sass)
+          //sass: require('sass'),
+
+          // Add file/folder to be monitored in watch mode so that changes to these files will trigger rebuilds.
+          // Do not choose a directory where rollup output or dest is pointed to as this will cause an infinite loop
+          watch: 'src/scss/theme.scss',
+        }),*/
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
