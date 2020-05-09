@@ -12,11 +12,11 @@ $icons-color: $info;
 .navbar {
   min-height: 4rem;
 }
-.tags.experience {
-  margin-bottom: 0.1rem;
-}
 .icon-themed {
   color: $icons-color;
 }
 
 @import "./inclusions.scss";
+.tags.experience {
+  margin-bottom: 0.1rem;
+}
