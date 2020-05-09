@@ -1,7 +1,7 @@
 <script>
-  import Section from './components/Section.svelte';
+  import WideSection from './components/WideSection.svelte';
 </script>
 
-<Section icon="cogs" title="Skills">
+<WideSection icon="fa fa-cogs" title="Skills">
   Test
-</Section>
+</WideSection>

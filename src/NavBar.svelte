@@ -1,16 +1,19 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<script>
+  export let info;
+</script>
+<nav class="navbar has-background-info" role="navigation" aria-label="main navigation">
   <div class="navbar-menu">
-    <div class="navbar-end">
+    <div class="navbar-end buttons">
+      {#each info.contactDetails as contact}
+      {#if contact.url}
       <div class="navbar-item">
-        <a class="icon is-medium" href="https://in.linkedin.com/in/praphull8888" target="_blank" title="LinkedIn">
-          <i class="fab fa-2x fa-linkedin" aria-hidden="true"></i>
+        <a class="button" href="{contact.url}" target="_blank" title="{contact.name}">
+          <span class="icon"><i class="icon-themed {contact.icon} fa-2x"></i></span>
+          <span>{contact.name}</span>
         </a>
       </div>
-      <div class="navbar-item">
-        <a class="icon is-medium" href="https://github.com/praphull" target="_blank" title="GitHub">
-          <i class="fab fa-2x fa-github-square" aria-hidden="true"></i>
-        </a>
-      </div>
+      {/if}
+      {/each}
     </div>
   </div>
 </nav>

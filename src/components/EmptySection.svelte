@@ -1,0 +1,1 @@
+<section class="section condensed-section"><div class="container"><slot></slot></div></section>

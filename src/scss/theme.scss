@@ -1,20 +1,22 @@
 @charset "utf-8";
 
-@import "./inclusions.scss";
+//Bulma initial vars
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
 
-$primary: $info;
 $condensed-padding: 1.5rem 0.75rem;
+$icons-color: $info;
 
 .condensed-section {
   padding: $condensed-padding;
 }
 .navbar {
-  background-color: $primary;
   min-height: 4rem;
 }
-
-.navbar-item {
-  a.icon {
-    color: $white;
-  }
+.tags.experience {
+  margin-bottom: 0.1rem;
 }
+.icon-themed {
+  color: $icons-color;
+}
+
+@import "./inclusions.scss";

@@ -1,5 +1,29 @@
+<script>
+  import Content from './components/Content.svelte';
+  const headerSize = 4;
+  export let info;
+</script>
+<style>
+.footer-links {
+  margin-right: 0.6rem;
+}
+</style>
 <footer class="footer">
-  <div class="content has-text-centered">
+  <div class="container has-text-centered">
+    <p>
+      {#each info.contactDetails as contact}
+      <span class="footer-links has-text-info">
+        {#if contact.url}
+        <a class="has-text-info" href="{contact.url}" target="_blank" title="{contact.name}">
+          <i class="icon icon-themed fa-lg {contact.icon}" title="{contact.name}"></i> {contact.id}
+        </a>
+        {:else}
+        <i class="icon icon-themed fa-lg {contact.icon}" title="{contact.name}"></i> {contact.id}
+        {/if}
+      </span>
+      {/each}
+    </p>
+    <br>
     <p>
       Hosted on <strong>Github pages.</strong> Built using <a href="https://bulma.io" target="_blank">Bulma</a> and
       <a href="https://svelte.dev/" target="_blank">Svelte</a>.<br>

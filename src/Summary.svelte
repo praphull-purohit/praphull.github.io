@@ -1,8 +1,50 @@
-<section id="intro" class="section">
-  <div class="container">
-    <h1 class="title">Section</h1>
-    <h2 class="subtitle">
-      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-    </h2>
+<script>
+  import EmptySection from './components/EmptySection.svelte';
+  import Content from './components/Content.svelte';
+  //import Card from './components/Card.svelte';
+  //import EmbeddedMap from './components/EmbeddedMap.svelte';
+
+  const headerSize = 4;
+  const summaryConfig = {
+    contentClass: "has-text-grey is-text-6",
+    headerSize: "6"
+  };
+  export let info;
+</script>
+
+<EmptySection title="Skills">
+  <div class="columns">
+    <div class="column is-one-third">
+      <Content {headerSize} header="Summary" icon="fa fa-list-alt">
+        <Content {...summaryConfig} url="#employment-details-6" header="Zilingo">
+          Scala, Play Framework, PostgreSQL, Kafka, MongoDB, FoundationJS, Bulma, JavaScript, HTML, REST, SOAP, XML
+        </Content>
+        <Content {...summaryConfig} url="#employment-details-5" header="Oracle">
+          Java, ADF, Oracle/PLSQL, SOAP Web services, UTPLSQL, OAF, XML
+        </Content>
+        <Content {...summaryConfig} url="#employment-details-3" header="Infosys">
+          Documentum, Java, C#, .Net, Oracle, XML
+        </Content>
+      </Content>
+    </div>
+
+    <div class="column is-one-third">
+      <Content {headerSize} header="Experience" icon="fa fa-database">
+        {#each info.experience as experience}
+        <div class="tags has-addons experience">
+          <span class="tag">{experience.duration}</span>
+          <span class="tag is-info">{experience.item}</span>
+        </div>
+        {/each}
+      </Content>
+    </div>
+
+    <div class="column is-one-third">
+      <Content {headerSize} header="What I love" icon="fas fa-hand-holding-heart" contentClass="has-text-black tags">
+        {#each info.preferred as preferred}
+        <span class="tag is-info">{preferred}</span>
+        {/each}
+      </Content>
+    </div>
   </div>
-</section>
+</EmptySection>
