@@ -11,11 +11,14 @@
     margin-right: 12px;
     margin-bottom: 4px;
   }
+  img {
+    border-radius: 1.5rem;
+  }
 </style>
 <EmptySection>
   <div class="columns">
-    <div class="column is-one-third">
-      <figure class="image">
+    <div class="column is-one-third is-mobile">
+      <figure class="image is-1by1">
         <img src="/public/images/pp.jpg" alt="Praphull Purohit">
       </figure>
     </div>
