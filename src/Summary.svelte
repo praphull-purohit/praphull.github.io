@@ -17,7 +17,8 @@
     <div class="column is-one-third">
       <Content {headerSize} header="Summary" icon="fa fa-list-alt">
         <Content {...summaryConfig} url="#employment-details-6" header="Zilingo">
-          Scala, Play Framework, PostgreSQL, Kafka, MongoDB, FoundationJS, Bulma, JavaScript, HTML, REST, SOAP, XML
+          Scala, Play Framework, PostgreSQL, Kafka, Webhooks, MongoDB, FoundationJS, Bulma, JavaScript, HTML, REST,
+          SOAP, XML
         </Content>
         <Content {...summaryConfig} url="#employment-details-5" header="Oracle">
           Java, ADF, Oracle/PLSQL, SOAP Web services, UTPLSQL, OAF, XML

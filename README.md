@@ -28,4 +28,5 @@ cd public
 ln -s ../index.html index.html
 ln -s ../public public
 ln -s ../assets assets
+npm run dev
 ```

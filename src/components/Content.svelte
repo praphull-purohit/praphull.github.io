@@ -4,11 +4,12 @@
 	export let icon;
 	export let contentClass = "has-text-grey";
 	export let headerSize = "5";
+	export let headerClass = "content";
 </script>
 
-<div class="content">
+<div class="{headerClass}">
   {#if header}
-    <div class="is-size-{headerSize} has-text-dark">
+    <div class="is-size-{headerSize} has-text-dark has-text-weight-medium">
       {#if icon}<i class="icon icon-themed {icon}"></i>{/if}
       {#if url}
         {#if url.startsWith('#')}

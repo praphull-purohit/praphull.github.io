@@ -9,10 +9,6 @@
     <Content {headerSize} header="Financial Functions Library">
       <a href="https://github.com/praphull/scala-finance" target="_blank">Scala library</a> of commonly used financial functions (e.g. XIRR, NPV)
     </Content>
-    <Content {headerSize} header="SBT multi-module (2017-19)">
-      <!-- Move to Zilingo experience -->
-      SBT multi project configuration setup for data warehouse sync client library standardization
-    </Content>
     <Content {headerSize} header="Android app & backend (2015-16)">
       Banana Kick - Android application (Java) and backend (Node.js) for booking sport venues (Android,
       Node.js/Express.js, Mocha/Should.js, MySQL, AWS, Twitter Digits, JWT)

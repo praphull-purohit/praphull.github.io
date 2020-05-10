@@ -1,7 +1,7 @@
 <script>
   export let info;
 </script>
-<nav class="navbar has-background-info" role="navigation" aria-label="main navigation">
+<nav class="navbar has-background-info is-hidden-touch" role="navigation" aria-label="main navigation">
   <div class="navbar-menu">
     <div class="navbar-end buttons">
       {#each info.contactDetails as contact}

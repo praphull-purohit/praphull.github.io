@@ -3,20 +3,32 @@
 //Bulma initial vars
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
-$condensed-padding: 1.5rem 0.75rem;
-$icons-color: $info;
-
-.condensed-section {
-  padding: $condensed-padding;
-}
 .navbar {
   min-height: 4rem;
 }
-.icon-themed {
-  color: $icons-color;
+@import "./inclusions.scss";
+
+.condensed-section {
+  padding: 1rem 0.5rem;
 }
 
-@import "./inclusions.scss";
+.icon-themed {
+  color: $info;
+}
+
 .tags.experience {
   margin-bottom: 0.1rem;
+}
+
+.eh-content {
+  margin-bottom: 1rem;
+  border-left: $grey dotted 1px;
+}
+
+.level:not(:last-child), .content:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.content.eh-header:not(:last-child) {
+  margin-bottom: 0.125rem;
 }
