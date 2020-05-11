@@ -18,7 +18,6 @@ const app = new App({
           {item: "Java", duration: "7 years"},
           {item: "Oracle/PLSQL", duration: "6 years"},
           {item: "PostgreSQL", duration: "4 years"},
-          {item: "HTML/Javascript", duration: "11 years"},
           {item: "Node.js", duration: "1 year"},
           {item: "C#", duration: "1 year"},
           {item: "Documentum", duration: "2 years"},

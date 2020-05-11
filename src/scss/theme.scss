@@ -6,6 +6,12 @@
 .navbar {
   min-height: 4rem;
 }
+
+.table.experience td {
+  border: none;
+  padding: 0.2em 0.75em
+}
+
 @import "./inclusions.scss";
 
 .condensed-section {

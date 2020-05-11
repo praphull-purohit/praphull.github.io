@@ -31,12 +31,11 @@
 
     <div class="column is-one-third">
       <Content {headerSize} header="Experience" icon="fa fa-database">
+        <table class="table experience is-fullwidth">
         {#each info.experience as experience}
-        <div class="tags has-addons experience">
-          <span class="tag">{experience.duration}</span>
-          <span class="tag is-info">{experience.item}</span>
-        </div>
+        <tr><td>{experience.item}</td><td class="has-text-right">{experience.duration}</td></tr>
         {/each}
+        </table>
       </Content>
     </div>
 
