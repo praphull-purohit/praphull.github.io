@@ -6,7 +6,7 @@
   }
 </script>
 
-<WideSection icon="fa fa-briefcase" title="Employment History">
+<WideSection icon="icon-briefcase-fa" title="Employment History">
   <EmploymentDetails {...edConfig} chronology="6" position="Junior Vice President, Logistics Tech" company="Zilingo"
                      start="June 2016"
                      end="Present" url="https://zilingo.com">

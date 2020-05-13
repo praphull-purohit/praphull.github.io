@@ -8,7 +8,7 @@
       {#if contact.url}
       <div class="navbar-item">
         <a class="button" href="{contact.url}" target="_blank" title="{contact.name}">
-          <span class="icon"><i class="icon-themed {contact.icon} fa-2x"></i></span>
+          <span class="icon"><i class="icon-themed {contact.icon}"></i></span>
           <span>{contact.name}</span>
         </a>
       </div>

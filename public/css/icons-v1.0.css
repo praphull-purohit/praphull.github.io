@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icon-subset';
+  src:
+    url('fonts/icon-subset.ttf?4hdax3') format('truetype'),
+    url('fonts/icon-subset.woff?4hdax3') format('woff'),
+    url('fonts/icon-subset.svg?4hdax3#icon-subset') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-subset' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope-fa:before {
+  content: "\f003";
+}
+.icon-heart-fa:before {
+  content: "\f004";
+}
+.icon-cogs-fa:before {
+  content: "\f085";
+}
+.icon-linkedin-square-fa:before {
+  content: "\f08c";
+}
+.icon-github-square-fa:before {
+  content: "\f092";
+}
+.icon-briefcase-fa:before {
+  content: "\f0b1";
+}
+.icon-list-ul-fa:before {
+  content: "\f0ca";
+}
+.icon-laptop-fa:before {
+  content: "\f109";
+}
+.icon-skype-fa:before {
+  content: "\f17e";
+}
+.icon-graduation-cap-fa:before {
+  content: "\f19d";
+}
+.icon-database-fa:before {
+  content: "\f1c0";
+}

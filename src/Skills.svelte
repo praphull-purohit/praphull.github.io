@@ -2,6 +2,6 @@
   import WideSection from './components/WideSection.svelte';
 </script>
 
-<WideSection icon="fa fa-cogs" title="Skills">
+<WideSection icon="icon-cogs-fa" title="Skills">
   Test
 </WideSection>

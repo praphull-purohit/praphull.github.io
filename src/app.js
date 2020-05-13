@@ -8,10 +8,10 @@ const app = new App({
           "JWT","Android","SQL","MongoDB","Amazon Web Services","Microservices","Git","REST","SOAP","XML","Webhooks",
           "Devops"],
         contactDetails: [
-          {name: "LinkedIn", icon: "fab fa-linkedin", id: "praphull8888", url: "https://in.linkedin.com/in/praphull8888"},
-          {name: "GitHub", icon: "fab fa-github-square", id: "praphull", url: "https://github.com/praphull"},
-          {name: "Skype", icon: "fab fa-skype", id: "praphull.purohit"},
-          {name: "Email", icon: "fa fa-envelope", id: "praphull8888 [at] gmail"}
+          {name: "LinkedIn", icon: "icon-linkedin-square-fa", id: "praphull8888", url: "https://in.linkedin.com/in/praphull8888"},
+          {name: "GitHub", icon: "icon-github-square-fa", id: "praphull", url: "https://github.com/praphull"},
+          {name: "Skype", icon: "icon-skype-fa", id: "praphull.purohit"},
+          {name: "Email", icon: "icon-envelope-fa", id: "praphull8888 [at] gmail"}
         ],
         experience: [
           {item: "Scala/Akka", duration: "4 years"},

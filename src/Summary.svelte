@@ -15,7 +15,7 @@
 <EmptySection title="Skills">
   <div class="columns">
     <div class="column is-one-third">
-      <Content {headerSize} header="Summary" icon="fa fa-list-alt">
+      <Content {headerSize} header="Summary" icon="icon-list-ul-fa">
         <Content {...summaryConfig} url="#employment-details-6" header="Zilingo">
           Scala, Play Framework, PostgreSQL, Kafka, Webhooks, MongoDB, FoundationJS, Bulma, JavaScript, HTML, REST,
           SOAP, XML
@@ -30,7 +30,7 @@
     </div>
 
     <div class="column is-one-third">
-      <Content {headerSize} header="Experience" icon="fa fa-database">
+      <Content {headerSize} header="Experience" icon="icon-database-fa">
         <table class="table experience is-fullwidth">
         {#each info.experience as experience}
         <tr><td>{experience.item}</td><td class="has-text-right">{experience.duration}</td></tr>
@@ -40,7 +40,7 @@
     </div>
 
     <div class="column is-one-third">
-      <Content {headerSize} header="What I love" icon="fas fa-hand-holding-heart" contentClass="has-text-black tags">
+      <Content {headerSize} header="What I love" icon="icon-heart-fa" contentClass="has-text-black tags">
         {#each info.preferred as preferred}
         <span class="tag is-info">{preferred}</span>
         {/each}

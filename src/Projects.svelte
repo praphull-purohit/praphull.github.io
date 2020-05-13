@@ -4,14 +4,18 @@
   const headerSize = 6;
 </script>
 
-<WideSection icon="fa fa-laptop-code" title="Projects/Tooling">
+<WideSection icon="icon-laptop-fa" title="Projects/Tooling/Experiments">
   <div class="content">
-    <Content {headerSize} header="Financial Functions Library">
+    <Content {headerSize} header="Financial Functions Library (2020)">
       <a href="https://github.com/praphull/scala-finance" target="_blank">Scala library</a> of commonly used financial functions (e.g. XIRR, NPV)
     </Content>
     <Content {headerSize} header="Android app & backend (2015-16)">
       Banana Kick - Android application (Java) and backend (Node.js) for booking sport venues (Android,
       Node.js/Express.js, Mocha/Should.js, MySQL, AWS, Twitter Digits, JWT)
+    </Content>
+    <Content {headerSize} header="Android ROM Building (2011-12)">
+      Tried my hands on building Android Open Source Project to understand the build processes, and created a
+      working AOSP port for Samsung Galaxy Ace (Android, C)
     </Content>
     <Content {headerSize} header="Virtual Classroom (IBM TGMC 2008)">
       Online lecture delivery and collaboration platform (J2EE, Websphere Application Server, DB2)

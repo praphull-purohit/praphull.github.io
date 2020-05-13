@@ -3,6 +3,8 @@
 //Bulma initial vars
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
+$themed-icon-medium-size: 1.5rem;
+
 .navbar {
   min-height: 4rem;
 }
@@ -37,4 +39,9 @@
 
 .content.eh-header:not(:last-child) {
   margin-bottom: 0.125rem;
+}
+
+nav i.icon-themed, footer i.icon-themed {
+  font-size: $themed-icon-medium-size;
+  vertical-align: middle;
 }
