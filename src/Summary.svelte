@@ -10,10 +10,19 @@
     headerSize: "6"
   };
   export let info;
+
+  let show = false;
+  import { slide } from 'svelte/transition';
+  import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  onMount(() => {
+   show = true;
+  });
 </script>
 
+{#if show}
 <EmptySection title="Skills">
-  <div class="columns">
+  <div class="columns"  transition:fade="{{delay: 2100, duration: 300}}">
     <div class="column is-one-third">
       <Content {headerSize} header="Summary" icon="icon-list-ul-fa">
         <Content {...summaryConfig} url="#employment-details-6" header="Zilingo">
@@ -48,3 +57,4 @@
     </div>
   </div>
 </EmptySection>
+{/if}
