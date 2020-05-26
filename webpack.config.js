@@ -75,5 +75,11 @@ module.exports = {
 //		new CleanWebpackPlugin(),
 //		new webpack.ProgressPlugin(),
 	],
+	optimization: {
+	  splitChunks: {
+        // include all types of chunks
+        chunks: 'all'
+      }
+	},
 	devtool: prod ? false: 'source-map'
 };

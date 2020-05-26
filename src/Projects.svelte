@@ -6,6 +6,10 @@
 
 <WideSection startDelay="3000" icon="icon-laptop-fa" title="Projects/Tooling/Experiments">
   <div class="content">
+    <Content {headerSize} header="Sudoku Solver (2020)">
+      DFS implementation to solve 9x9
+      <b><a href="https://github.com/praphull/sudoku-solver" target="_blank">Sudoku Boards</a></b>(<b>Scala</b>)
+    </Content>
     <Content {headerSize} header="Financial Functions Library (2020)">
       <b><a href="https://github.com/praphull/scala-finance" target="_blank">Scala library</a></b> of commonly used
       financial functions (e.g. <b>XIRR, NPV</b>)

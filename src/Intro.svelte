@@ -28,14 +28,13 @@
 {#if show}
 <EmptySection>
   <div class="columns">
-    <div class="column is-one-third is-mobile">
+    <div class="column is-one-third has-text-centered is-hidden-touch">
       <figure class="image is-1by1" transition:fade="{{delay: 300, duration: 300}}">
         <img src="/public/images/pp.jpg" alt="Praphull Purohit">
       </figure>
     </div>
-    <div class="column is-two-thirds" transition:fade="{{delay: 600, duration: 300}}">
+    <div class="column is-full-mobile is-two-thirds-desktop" transition:fade="{{delay: 600, duration: 300}}">
       <Content header="Praphull Purohit" headerSize="4">Polyglot Developer - Bangalore, India.</Content>
-
       <div class="content">
         <div class="content" transition:fade="{{delay: 900, duration: 300}}">I am a polyglot developer with 11 years of professional software development experience
           in building <strong>reactive microservices</strong>, <strong>enterprise products</strong> and legacy
