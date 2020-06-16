@@ -19,7 +19,7 @@
     {#each info.certifications.lightbend as certification}
     <a href="https://www.youracclaim.com/badges/{certification.certificateId}/embedded" target="_blank" class="is-inline-flex">
       <figure class="image is-96x96">
-        <img src="/images/certifications/lightbend/{certification.icon}" alt="{certification.name}" title="{certification.name}">
+        <img src="/public/images/certifications/lightbend/{certification.icon}" alt="{certification.name}" title="{certification.name}">
       </figure>
     </a>
     {/each}
