@@ -48,7 +48,26 @@ const app = new App({
           {item: "C#", duration: "1 year"},
           {item: "Documentum", duration: "2 years"},
         ],
-        preferred: ["Scala", "Akka", "Databases/SQL", "Java", "Node.js", "JavaScript/Web"]
+        preferred: ["Scala", "Akka", "Databases/SQL", "Java", "Node.js", "JavaScript/Web"],
+        certifications: {
+          lightbend: [
+            {
+              certificateId: "db264da9-d029-4ca0-999f-82d5a08ab2e5",
+              name: "Lightbend Akka for Scala Professional - Level 2",
+              icon: "lightbend-akka-for-scala-professional-level-2.png"
+            },
+            {
+              certificateId: "d60162d0-f54c-47ab-9f76-d7df3b6d03ae",
+              name: "Lightbend Akka Streams for Scala Professional - Level 1",
+              icon: "lightbend-akka-streams-for-scala-professional-level-1.png"
+            }
+          ]
+        },
+        courses: {
+          coursera: [
+            {certificateId: "W5KPDYKVJ2JP", name: "Functional Programming Principles in Scala", university: "École polytechnique fédérale de Lausanne"}
+          ]
+        }
      }
 	}
 });
