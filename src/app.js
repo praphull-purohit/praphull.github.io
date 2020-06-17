@@ -52,6 +52,11 @@ const app = new App({
         certifications: {
           lightbend: [
             {
+              certificateId: "d8ba5bd3-1ef3-441e-8a7c-16e99d90c780",
+              name: "Reactive Architecture: Introduction to Reactive Systems - Level 2",
+              icon: "reactive-architecture-introduction-to-reactive-systems-level-2.png"
+            },
+            {
               certificateId: "db264da9-d029-4ca0-999f-82d5a08ab2e5",
               name: "Lightbend Akka for Scala Professional - Level 2",
               icon: "lightbend-akka-for-scala-professional-level-2.png"
