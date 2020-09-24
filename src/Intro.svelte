@@ -11,6 +11,16 @@
   onMount(() => {
    show = true;
   });
+
+  const dd = function(d1,d2) {
+   const rev = d1.getTime() > d2.getTime();
+   const mn = rev?d2:d1, mx = rev?d1:d2;
+   const y = (mx.getFullYear() - mn.getFullYear())*12;
+   const df = y - mn.getMonth() + mx.getMonth();
+   return df > 0 ? df : 0;
+  };
+
+  let months = dd(new Date(), new Date("01 Jul 2020"));
 </script>
 <style>
   .tag-container {
@@ -42,7 +52,9 @@
         </div>
 
         <div class="content" transition:fade="{{delay: 1200, duration: 300}}">
-          For past 4 years, I have been working primarily on developing reactive microservices for
+          For past {months} months, I've been working with <strong>Truecaller</strong>, owning the backend microservices
+          (Scala, Java, Cassandra) for its developer platform and SDKs (Android, iOS & mobile web).
+          Prior to Truecaller, I worked for 4 years on developing reactive microservices for
           <Tip tip="Valued at ~$970 million during series D in Feb 2019, totalling VC infusion to $304 million">almost billion dollar</Tip>
           fashion eCommerce startup <strong>Zilingo</strong> using <strong>
             <Tip tip="A functional & object oriented programming language running on JVM">Scala</Tip>,
@@ -52,7 +64,7 @@
         </div>
 
         <div class="content" transition:fade="{{delay: 1500, duration: 300}}">
-          I have experience developing software for <b>e-Commerce</b>, <b>Logistics</b>,<b>Supply
+          I have experience developing software for <b>Communications</b>, <b>e-Commerce</b>, <b>Logistics</b>,<b>Supply
           Chain</b>, <b>Aircraft maintenance</b> and <b>Energy</b> industries, and I'm open to exploring new business domains.
         </div>
       </div>

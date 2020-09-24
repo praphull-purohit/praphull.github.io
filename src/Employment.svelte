@@ -8,9 +8,23 @@
 </script>
 
 <WideSection icon="icon-briefcase-fa" title="Employment History" startDelay="2400" duration="600">
+  <EmploymentDetails {...edConfig} chronology="7" position="Senior Software Engineer" company="Truecaller"
+                     start="July 2020"
+                     end="Present"
+                     url="https://developer.truecaller.com">
+    <ul>
+      <li>Leading the backend development for Truecaller SDK and developer ecosystem</li>
+      <li>
+        Handling development of multiple microservices (<b>Scala, Java, Play Framework, Dropwizard, gRPC, Cassandra</b>)
+        deployed over Kubernetes on <Tip tip="Google Cloud Platform">GCP</Tip> and on-premise data center. These services
+        provide backend APIs for Android, iOS and mobile web SDKs, used by hundreds of developers and 150 million+
+        daily users.
+      </li>
+    </ul>
+  </EmploymentDetails>
   <EmploymentDetails {...edConfig} chronology="6" position="Junior Vice President, Logistics Tech" company="Zilingo"
                      start="June 2016"
-                     end="Present" url="https://zilingo.com">
+                     end="June 2020" url="https://zilingo.com">
     <ul>
       <li>Rewrote the logistics API integrations system from scratch using <b>Akka Actor system</b> for handling
         <b>thousands of concurrent operations</b>. Scaled the system from 1 API integration to
