@@ -48,6 +48,8 @@ const app = new App({
           {name: "Bulma", title: "Bulma", url: "https://bulma.io"},
           {name: "Foundation", title: "Foundation JS", url: "https://get.foundation"},
           {name: "GDPR", title: "GDPR", hash: "gdpr"},
+          {name: "Firebase", title: "Firebase", hash: "firebase"},
+          {name: "Cloud Functions", title: "Google Cloud Functions", hash: "cloudfunctions"},
         ],
         contactDetails: [
           {name: "LinkedIn", icon: "icon-linkedin-square-fa", id: "praphull8888", url: "https://in.linkedin.com/in/praphull8888"},
