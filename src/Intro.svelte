@@ -21,6 +21,7 @@
   };
 
   let months = dd(new Date(), new Date("01 Jul 2020"));
+  let years = (dd(new Date(), new Date("27 Jul 2009")) / 12.0).toFixed(1);
 </script>
 <style>
   .tag-container {
@@ -44,9 +45,9 @@
       </figure>
     </div>
     <div class="column is-full-mobile is-two-thirds-desktop" transition:fade="{{delay: 600, duration: 300}}">
-      <Content header="Praphull Purohit" headerSize="4">Polyglot Developer - Bangalore, India.</Content>
+      <Content header="Praphull Purohit" headerSize="4">Polyglot Developer - Bengaluru, India.</Content>
       <div class="content">
-        <div class="content" transition:fade="{{delay: 900, duration: 300}}">I am a polyglot developer with 11 years of professional software development experience
+        <div class="content" transition:fade="{{delay: 900, duration: 300}}">I am a polyglot developer with {years} years of professional software development experience
           in building <strong>reactive microservices</strong>, <strong>enterprise products</strong> and legacy
           applications across a range of programming languages.
         </div>
@@ -71,7 +72,11 @@
 
       <div class="content tag-container" transition:fade="{{delay: 1800, duration: 300}}">
         {#each info.tags as tag}
+        {#if tag.url !== undefined}
+        <a href="{tag.url}" target="_blank" title="{tag.title}"><span class="tag is-info is-light">{tag.name}</span></a>
+        {:else}
         <a href="https://twitter.com/hashtag/{tag.hash}" target="_blank" title="{tag.title}"><span class="tag is-info is-light">{tag.name}</span></a>
+        {/if}
         {/each}
       </div>
     </div>

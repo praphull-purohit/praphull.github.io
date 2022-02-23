@@ -25,8 +25,8 @@
   <div class="columns"  transition:fade="{{delay: 2100, duration: 300}}">
     <div class="column is-one-third">
       <Content {headerSize} header="Summary" icon="icon-list-ul-fa">
-        <Content {...summaryConfig} url="#employment-details-7" header="Truecaller">
-          Scala, Play Framework, Java, gRPC, Protobuf, Kafka, MariaDB, Cassandra
+        <Content {...summaryConfig} url="#employment-details-8" header="Truecaller">
+          Scala, Play Framework, Java, gRPC, Protobuf, Kafka, MariaDB, Cassandra, Shopify
         </Content>
         <Content {...summaryConfig} url="#employment-details-6" header="Zilingo">
           Scala, Play Framework, PostgreSQL, Kafka, Webhooks, MongoDB, FoundationJS, Bulma, JavaScript, HTML, REST,

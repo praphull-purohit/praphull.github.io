@@ -6,7 +6,8 @@
   "scripts": {
     "css-build": "node-sass --omit-source-map-url src/sass/theme.sass assets/css/theme.css",
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --content-base public"
+    "dev": "webpack-dev-server --content-base public",
+    "serve": "cross-env NODE_ENV=production webpack && serve -s ."
   },
   "devDependencies": {
     "@creativebulma/bulma-tooltip": "^1.2.0",

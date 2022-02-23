@@ -1,6 +1,6 @@
 # Source for praphull.github.io
 
-This site is buit using [Svelte](https://svelte.dev) and [Bulma](https://bulma.io) . It is hosted at https://praphull.com
+This site is built using [Svelte](https://svelte.dev) and [Bulma](https://bulma.io) . It is hosted at https://praphull.com
 
 ## Modifying
 

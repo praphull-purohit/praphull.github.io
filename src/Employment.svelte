@@ -8,17 +8,49 @@
 </script>
 
 <WideSection icon="icon-briefcase-fa" title="Employment History" startDelay="2400" duration="600">
+  <EmploymentDetails {...edConfig} chronology="8" position="Senior Backend Engineer & Team Lead" company="Truecaller"
+                     start="January 2021"
+                     end="Present"
+                     url="https://www.truecaller.com">
+    <ul>
+      <li>Leading an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank">Truecaller SDK</a> development.</li>
+      <li>Led the migration of a microservice from Dropwizard & Java to Play Framework & Scala</li>
+      <li>Implemented the backend services for OAuth 2.0 authorization server with PKCE from scratch, using Scala, Play Framework & GRPC.</li>
+      <li>Led the architecture for OAuth client SDK implementation in Android & iOS, to ensure it is done in a way that lets future backend evolution of 
+        these OAuth services work without a neeed for SDK update in 3rd party applications, thereby reducing time to market for future revisions (e.g. Openid support)
+      </li>
+      <li>Designed the architecture for 2nd phase of OAuth implementation, making our OAuth backend &amp; client SDKs compliant with Openid</li>
+    </ul>
+  </EmploymentDetails>
   <EmploymentDetails {...edConfig} chronology="7" position="Senior Software Engineer" company="Truecaller"
                      start="July 2020"
-                     end="Present"
-                     url="https://developer.truecaller.com">
+                     end="December 2020"
+                     url="https://www.truecaller.com">
     <ul>
-      <li>Leading the backend development for Truecaller SDK and developer ecosystem</li>
+      <li>Took over the backend development for <a href="https://developer.truecaller.com" target="_blank">Truecaller SDK</a> and developer ecosystem</li>
       <li>
-        Handling development of multiple microservices (<b>Scala, Java, Play Framework, Dropwizard, gRPC, Cassandra</b>)
+        Handled development/evolution of multiple microservices (<b>Scala, Java, Play Framework, Dropwizard, gRPC, Cassandra</b>)
         deployed over Kubernetes on <Tip tip="Google Cloud Platform">GCP</Tip> and on-premise data center. These services
-        provide backend APIs for Android, iOS and mobile web SDKs, used by hundreds of developers and 150 million+
-        daily users.
+        provide backend APIs for Android, iOS and mobile web SDKs, used by hundreds of developers and 300 million+
+        monthly active users.
+      </li>
+      <li>
+        Led the early access program for Truecaller's Business Messaging APIs
+        <ul>
+          <li>Set up tooling for integrating Business Messaging GRPC services in partner backends on Java (Maven, Gradle), Node.js, Go & Ruby</li>
+          <li>Created documentation for integrating these APIs in all these languages and helped early access partners in integration</li>
+          <li>Created reference implementations for Business Messaging APIs in Java & Node.js</li>
+          <li>Ported a proprietary image compression algorithm used by Truecaller Messaging from Kotlin to Java & Node.js. Architected the algorithm
+            in a way that the backend implementations could plug in their platform specific image libraries to read a variety of image formats and
+            use it with the algorithm. Fixed a performance bug as part of the porting (backported to Kotlin later by owning teams), that reduced algorithm's 
+            memory footprint by >1000x and fixed rotation/skewing issues in the output image
+          </li>
+          <li>Created a Java implementation of Business Messaging GRPC client as a runnable jar, with several command line options, to enable QA teams to test 
+            these APIs as they evolve during/post EAP. This was also used for load testing the APIs</li>
+          <li>Joined the GTM team and made the initial product pitch to all early access partners, working with external product & backend teams to get
+            APIs implemented in the right manner, with proper instrumentation and scalability considerations.
+          </li>
+        </ul>
       </li>
     </ul>
   </EmploymentDetails>
