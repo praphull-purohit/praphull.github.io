@@ -14,7 +14,7 @@
                      url="https://www.truecaller.com">
     <ul>
       <li>Leading an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank">Truecaller SDK</a> development.</li>
-      <li>Built a <b>Shopify App</b>, to enable number verification by Truecaller in Shopify ecosystem.
+      <li>Built a <b><a href="https://apps.shopify.com/truecaller" target="_blank">Shopify App</a></b>, to enable number verification by Truecaller in Shopify ecosystem.
         <ul>
           <li>Built the backend service for this implementation from scratch, implementing Shopify's OAuth 2.0 flow and a custom authentication
             layer for app configuration flows.
