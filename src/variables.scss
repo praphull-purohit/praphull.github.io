@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* Variables and mixins declared here will be available in all other SCSS files */ /* https://github.com/jgthms/bulma/issues/1293 */
+$body-overflow-y: auto;
+
+//Bulma initial vars
+@import "bulma/sass/utilities/_all";
+
+$themed-icon-medium-size: 1.5rem;
+
+.navbar {
+  min-height: 4rem;
+}
+
+.table.experience td {
+  border: none;
+  padding: 0.2em 0.75em
+}
+
+.condensed-section {
+  padding: 1rem 0.5rem;
+}
+
+.icon-themed {
+  color: $info;
+}
+
+.tags.experience {
+  margin-bottom: 0.1rem;
+}
+
+.eh-content, .sk-content {
+  margin-bottom: 1rem;
+  border-left: $grey dotted 1px;
+}
+
+.level:not(:last-child), .content:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.content.eh-header:not(:last-child) {
+  margin-bottom: 0.125rem;
+}
+
+nav i.icon-themed, footer i.icon-themed {
+  font-size: $themed-icon-medium-size;
+  vertical-align: middle;
+}

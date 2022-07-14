@@ -1,30 +1,32 @@
 {
   "name": "praphull.github.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": "https://github.com/praphull/praphull.github.io",
   "license": "Apache-2.0",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url src/sass/theme.sass assets/css/theme.css",
-    "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --content-base public",
-    "serve": "cross-env NODE_ENV=production webpack && serve -s ."
+    "dev": "vite dev",
+    "build": "vite build",
+    "package": "svelte-kit package",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
-    "@creativebulma/bulma-tooltip": "^1.2.0",
-    "bulma": "^0.8.2",
-    "cross-env": "^7.0.3",
-    "css-loader": "^6.6.0",
-    "mini-css-extract-plugin": "^2.5.3",
-    "node-sass": "^7.0.1",
-    "sass-loader": "^12.6.0",
-    "serve": "^13.0.2",
-    "style-loader": "^3.3.1",
-    "svelte": "^3.46.4",
-    "svelte-loader": "3.1.2",
-    "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "svelte": "^3.49.0",
+    "svelte-check": "^2.8.0",
+    "svelte-preprocess": "^4.10.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.13",
+    "sass": "^1.53.0",
+    "bulma": "^0.9.4",
+    "@creativebulma/bulma-tooltip": "^1.2.0"
   },
+  "type": "module",
   "engines": {
     "node": ">=16"
   }
