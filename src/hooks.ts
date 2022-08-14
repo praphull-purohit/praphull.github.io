@@ -20,7 +20,9 @@ export type Experience = {
 export type LightbendCertification = {
     certificateId: string,
     name: string,
-    icon: string
+    icon: string,
+    iconWidth?: number,
+    iconHeight?: number
 };
 
 export type Certifications = {
@@ -119,17 +121,23 @@ export const handle: Handle = async ({ event, resolve }) => {
                     {
                         certificateId: "d8ba5bd3-1ef3-441e-8a7c-16e99d90c780",
                         name: "Reactive Architecture: Introduction to Reactive Systems - Level 2",
-                        icon: "reactive-architecture-introduction-to-reactive-systems-level-2.png"
+                        icon: "reactive-architecture-introduction-to-reactive-systems-level-2.png",
+                        iconWidth: 96,
+                        iconHeight: 96
                     },
                     {
                         certificateId: "db264da9-d029-4ca0-999f-82d5a08ab2e5",
                         name: "Lightbend Akka for Scala Professional - Level 2",
-                        icon: "lightbend-akka-for-scala-professional-level-2.png"
+                        icon: "lightbend-akka-for-scala-professional-level-2.png",
+                        iconWidth: 96,
+                        iconHeight: 96
                     },
                     {
                         certificateId: "d60162d0-f54c-47ab-9f76-d7df3b6d03ae",
                         name: "Lightbend Akka Streams for Scala Professional - Level 1",
-                        icon: "lightbend-akka-streams-for-scala-professional-level-1.png"
+                        icon: "lightbend-akka-streams-for-scala-professional-level-1.png",
+                        iconWidth: 96,
+                        iconHeight: 96
                     }
                 ]
             },

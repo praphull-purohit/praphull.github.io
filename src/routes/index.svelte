@@ -34,6 +34,8 @@
                         src="../images/certifications/lightbend/{certification.icon}"
                         alt={certification.name}
                         title={certification.name}
+                        width={certification.iconWidth}
+                        height={certification.iconHeight}
                     />
                 </figure>
             </a>

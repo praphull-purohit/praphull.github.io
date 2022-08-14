@@ -36,7 +36,7 @@
     <br>
     <p>
       Hosted on <strong><a href="https://netlify.com" target="_blank">Netlify</a></strong>.
-      Built using <a href="https://bulma.io" target="_blank">Bulma</a> & <a href="https://svelte.dev/" target="_blank">Svelte</a>/,
+      Built using <a href="https://bulma.io" target="_blank">Bulma</a> & <a href="https://svelte.dev/" target="_blank">Svelte</a>/
       <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>. Icons from
       <a href="https://icomoon.io/" target="_blank">IcoMoon</a>. Page layout inspired from toptal.<br>
       The <a href="https://github.com/praphull/praphull.github.io" target="_blank">source code</a> is licensed under
