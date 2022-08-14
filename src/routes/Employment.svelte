@@ -1,6 +1,6 @@
 <script type="ts">
   import { browser, dev } from '$app/env';
-  export const hydrate = dev;
+  export const hydrate = false;
   export const router = browser;
   export const prerender = true;
   import WideSection from './components/WideSection.svelte';
@@ -12,12 +12,21 @@
 </script>
 
 <WideSection icon="icon-briefcase-fa" title="Employment History" startDelay={900} duration={300}>
-  <EmploymentDetails {...edConfig} chronology={8} position="Senior Backend Engineer & Team Lead" company="Truecaller"
-                     start="January 2021"
+  <EmploymentDetails {...edConfig} chronology={9} position="Staff Engineer & Team Lead" company="Truecaller"
+                     start="July 2022"
                      end="Present"
                      url="https://www.truecaller.com">
     <ul>
       <li>Leading an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank">Truecaller SDK</a> development.</li>
+      <li>Working on features not yet publicly accessible and leading a critical data migration from a legacy DB to a new DB</li>
+    </ul>
+  </EmploymentDetails>
+  <EmploymentDetails {...edConfig} chronology={8} position="Senior Backend Engineer & Team Lead" company="Truecaller"
+                     start="January 2021"
+                     end="June 2022"
+                     url="https://www.truecaller.com">
+    <ul>
+      <li>Led an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank">Truecaller SDK</a> development.</li>
       <li>Built a <b><a href="https://apps.shopify.com/truecaller" target="_blank">Shopify App</a></b>, to enable number verification by Truecaller in Shopify ecosystem.
         <ul>
           <li>Built the backend service for this implementation from scratch, implementing Shopify's OAuth 2.0 flow and a custom authentication
@@ -60,8 +69,8 @@
             as part of the porting (backported to Kotlin later by owning teams), that reduced algorithm's memory footprint by >1000x and fixed 
             rotation/skewing issues in the output image
           </li>
-          <li>Created a Java implementation of Business Messaging GRPC client as a runnable jar, with several command line options, to enable QA teams to test 
-            these APIs as they evolve during/post EAP. This was also used for load testing the APIs</li>
+          <li>Created a Java & Node.js implementation of Business Messaging GRPC client as a runnable jar, with several command line options,
+            to enable QA teams to test these APIs as they evolve during/post EAP. This was also used for load testing the APIs</li>
           <li>Joined the GTM team and made the initial product pitch to all early access partners, working with external product & backend teams to get
             APIs implemented in the right manner, with proper instrumentation and scalability considerations.
           </li>

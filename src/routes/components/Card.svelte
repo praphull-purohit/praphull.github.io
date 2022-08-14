@@ -1,6 +1,6 @@
 <script type="ts">
-  export let header;
-  export let icon;
+  export let header: string;
+  export let icon: string;
 </script>
 
 <div class="card">

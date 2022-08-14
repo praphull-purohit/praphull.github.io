@@ -1,6 +1,6 @@
 <script lang="ts">
     import { browser, dev } from '$app/env';
-    export const hydrate = dev;
+    export const hydrate = false;
     export const router = browser;
     export const prerender = true;
     import type { Info } from 'src/hooks';
@@ -11,7 +11,7 @@
     export let info: Info;
   
     let show = false;
-    import { slide } from 'svelte/transition';
+    //import { slide } from 'svelte/transition';
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     onMount(() => {

@@ -1,6 +1,6 @@
-<script>
+<script lang="ts" context="module">
   import { browser, dev } from '$app/env';
-  export const hydrate = dev;
+  export const hydrate = false;
   export const router = browser;
   export const prerender = true;
   import WideSection from './components/WideSection.svelte';

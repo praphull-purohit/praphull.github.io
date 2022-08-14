@@ -1,6 +1,6 @@
 <script type="ts">
   import { browser, dev } from '$app/env';
-  export const hydrate = dev;
+  export const hydrate = false;
   export const router = browser;
   export const prerender = true;
   
@@ -28,7 +28,7 @@
   <div class="columns" transition:fade="{{delay: 150, duration: 300}}">
     <div class="column is-one-third" transition:fade="{{delay: 150, duration: 300}}">
       <Content {headerSize} header="Summary" icon="icon-list-ul-fa">
-        <Content {...summaryConfig} url="#employment-details-8" header="Truecaller">
+        <Content {...summaryConfig} url="#employment-details-9" header="Truecaller">
           Scala, Play Framework, Java, gRPC, Protobuf, Kafka, MariaDB, Cassandra, Shopify
         </Content>
         <Content {...summaryConfig} url="#employment-details-6" header="Zilingo">
