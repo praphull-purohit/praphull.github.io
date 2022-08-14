@@ -25,8 +25,8 @@
 
 {#if show}
 <EmptySection title="Skills">
-  <div class="columns"  transition:fade="{{delay: 2100, duration: 300}}">
-    <div class="column is-one-third">
+  <div class="columns" transition:fade="{{delay: 150, duration: 300}}">
+    <div class="column is-one-third" transition:fade="{{delay: 150, duration: 300}}">
       <Content {headerSize} header="Summary" icon="icon-list-ul-fa">
         <Content {...summaryConfig} url="#employment-details-8" header="Truecaller">
           Scala, Play Framework, Java, gRPC, Protobuf, Kafka, MariaDB, Cassandra, Shopify
@@ -44,7 +44,7 @@
       </Content>
     </div>
 
-    <div class="column is-one-third">
+    <div class="column is-one-third" transition:fade="{{delay: 300, duration: 300}}">
       <Content {headerSize} header="Experience" icon="icon-database-fa">
         <table class="table experience is-fullwidth">
         {#each info.experience as experience}
@@ -54,7 +54,7 @@
       </Content>
     </div>
 
-    <div class="column is-one-third">
+    <div class="column is-one-third" transition:fade="{{delay: 450, duration: 300}}">
       <Content {headerSize} header="What I love" icon="icon-heart-fa" contentClass="has-text-black tags">
         {#each info.preferred as preferred}
         <span class="tag is-info">{preferred}</span>

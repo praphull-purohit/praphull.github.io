@@ -10,7 +10,7 @@
   export let info: Info;
 </script>
 
-<WideSection icon="icon-cogs-fa" title="Trainings/Courses" startDelay={3300}>
+<WideSection icon="icon-cogs-fa" title="Trainings/Courses" startDelay={600}>
   <div class="content">
     <Content {headerSize} header="Zilingo - School for Gifted Youngsters (Apr-Dec 2019)">
       Attended a leadership development program spanning 9 months, with 9 full-day sessions and several personally

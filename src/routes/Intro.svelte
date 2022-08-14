@@ -46,19 +46,19 @@
   <EmptySection>
     <div class="columns">
       <div class="column is-one-third has-text-centered is-hidden-touch">
-        <figure class="image is-1by1" transition:fade="{{delay: 300, duration: 300}}">
+        <figure class="image is-1by1" transition:fade="{{delay: 150, duration: 300}}">
           <img src="../images/pp.jpg" alt="Praphull Purohit">
         </figure>
       </div>
-      <div class="column is-full-mobile is-two-thirds-desktop" transition:fade="{{delay: 600, duration: 300}}">
+      <div class="column is-full-mobile is-two-thirds-desktop" transition:fade="{{delay: 150, duration: 300}}">
         <Content header="Praphull Purohit" headerSize={4}>Polyglot Developer - Bengaluru, India.</Content>
         <div class="content">
-          <div class="content" transition:fade="{{delay: 900, duration: 300}}">I am a polyglot developer with {years} years of professional software development experience
+          <div class="content" transition:fade="{{delay: 150, duration: 300}}">I am a polyglot developer with {years} years of professional software development experience
             in building <strong>reactive microservices</strong>, <strong>enterprise products</strong> and legacy
             applications across a range of programming languages.
           </div>
   
-          <div class="content" transition:fade="{{delay: 1200, duration: 300}}">
+          <div class="content" transition:fade="{{delay: 300, duration: 300}}">
             For past {months} months, I've been working with <strong>Truecaller</strong>, owning the backend microservices
             (Scala, Java, Cassandra) for its developer platform and SDKs (Android, iOS & mobile web).
             Prior to Truecaller, I worked for 4 years on developing reactive microservices for
@@ -70,13 +70,13 @@
               <Tip tip="A high-throughput stream processing platform">Kafka</Tip></strong>.
           </div>
   
-          <div class="content" transition:fade="{{delay: 1500, duration: 300}}">
+          <div class="content" transition:fade="{{delay: 450, duration: 300}}">
             I have experience developing software for <b>Communications</b>, <b>e-Commerce</b>, <b>Logistics</b>,<b>Supply
             Chain</b>, <b>Aircraft maintenance</b> and <b>Energy</b> industries, and I'm open to exploring new business domains.
           </div>
         </div>
   
-        <div class="content tag-container" transition:fade="{{delay: 1800, duration: 300}}">
+        <div class="content tag-container" transition:fade="{{delay: 600, duration: 300}}">
           {#each info.tags as tag}
           {#if tag.url !== undefined}
           <a href="{tag.url}" target="_blank" title="{tag.title}"><span class="tag is-info is-light">{tag.name}</span></a>

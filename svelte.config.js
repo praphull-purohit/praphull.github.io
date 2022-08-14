@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-static";
+import adapter from "@sveltejs/adapter-netlify";
 import preprocess from "svelte-preprocess";
 
 const dev = process.env.NODE_ENV === 'development';
@@ -16,7 +16,7 @@ const config = {
   ],
 
   paths: {
-    base: dev ? '' : '/praphull',
+    base: dev ? '' : '/praphull.github.io',
   },
 
   kit: {

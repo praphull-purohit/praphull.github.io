@@ -11,7 +11,7 @@
   }
 </script>
 
-<WideSection icon="icon-briefcase-fa" title="Employment History" startDelay={2400} duration={600}>
+<WideSection icon="icon-briefcase-fa" title="Employment History" startDelay={900} duration={300}>
   <EmploymentDetails {...edConfig} chronology={8} position="Senior Backend Engineer & Team Lead" company="Truecaller"
                      start="January 2021"
                      end="Present"

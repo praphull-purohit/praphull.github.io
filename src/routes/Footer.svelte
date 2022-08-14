@@ -19,7 +19,7 @@
 </style>
 {#if show}
 <footer class="footer">
-  <div class="container has-text-centered" transition:fade="{{delay: 3600, duration: 300}}">
+  <div class="container has-text-centered" transition:fade="{{delay: 900, duration: 300}}">
     <p>
       {#each info.contactDetails as contact}
       <span class="footer-links has-text-info">

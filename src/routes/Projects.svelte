@@ -8,7 +8,7 @@
   const headerSize = 6;
 </script>
 
-<WideSection startDelay={3000} icon="icon-laptop-fa" title="Projects/Tooling/Experiments">
+<WideSection startDelay={900} icon="icon-laptop-fa" title="Projects/Tooling/Experiments">
   <div class="content">
     <Content {headerSize} header="Sudoku Solver (2020)">
       DFS implementation to solve 9x9

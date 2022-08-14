@@ -40,7 +40,9 @@
 	  gtag('config', 'UA-166491853-1');
 	</script>
 	
-	<link rel='stylesheet' href='%sveltekit.assets%/css/icons-v1.0.css'>
+	<link rel="preload" rel='stylesheet' href='%sveltekit.assets%/css/icons-v1.0.css' as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="%sveltekit.assets%/css/icons-v1.0.css"></noscript>
+
 	
 	%sveltekit.head%
 </head>
