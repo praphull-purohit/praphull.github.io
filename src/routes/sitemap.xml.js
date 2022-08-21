@@ -16,8 +16,7 @@ export async function get() {
     >
         <url>
           <loc>https://praphull.com/</loc>
-          <lastmod>2022-08-14</lastmod>
-          <changefreq>monthly</changefreq>
+          <lastmod>2022-08-21</lastmod>
         </url>
     </urlset>`,
   }

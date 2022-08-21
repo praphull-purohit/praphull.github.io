@@ -3,11 +3,11 @@
     export const hydrate = false;
     export const router = browser;
     export const prerender = true;
-    import type { Info } from 'src/hooks';
+    import type { Info } from '../types';
 
-    import EmptySection from './components/EmptySection.svelte';
-    import Content from './components/Content.svelte';
-    import Tip from './components/Tip.svelte';
+    import EmptySection from '../components/EmptySection.svelte';
+    import Content from '../components/Content.svelte';
+    import Tip from '../components/Tip.svelte';
     export let info: Info;
   
     let show = false;

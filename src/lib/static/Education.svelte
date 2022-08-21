@@ -3,8 +3,8 @@
   export const hydrate = false;
   export const router = browser;
   export const prerender = true;
-  import Content from './components/Content.svelte';
-  import WideSection from './components/WideSection.svelte';
+  import Content from '../components/Content.svelte';
+  import WideSection from '../components/WideSection.svelte';
 </script>
 
 <WideSection  startDelay={900} icon="icon-graduation-cap-fa" title="Education">

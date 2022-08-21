@@ -3,9 +3,9 @@
   export const hydrate = false;
   export const router = browser;
   export const prerender = true;
-  import WideSection from './components/WideSection.svelte';
-  import EmploymentDetails from './components/EmploymentDetails.svelte';
-  import Tip from './components/Tip.svelte';
+  import WideSection from '../components/WideSection.svelte';
+  import EmploymentDetails from '../components/EmploymentDetails.svelte';
+  import Tip from '../components/Tip.svelte';
   const edConfig = {
     contentClass: "content eh-content"
   }

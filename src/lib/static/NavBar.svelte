@@ -3,7 +3,7 @@
   export const hydrate = false;
   export const router = browser;
   export const prerender = true;
-  import type { Info } from "src/hooks";
+  import type { Info } from "../types";
 
   export let info: Info;
 </script>

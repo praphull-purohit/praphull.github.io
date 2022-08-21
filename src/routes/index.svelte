@@ -3,17 +3,17 @@
     export const hydrate = dev;
     export const router = browser;
     export const prerender = true;
-    import type { Info } from "src/hooks";
+    import type { Info } from "$lib/types";
 
-    import NavBar from "./NavBar.svelte";
-    import Intro from "./Intro.svelte";
-    import Summary from './Summary.svelte';
-    import Employment from './Employment.svelte';
-    import Projects from './Projects.svelte';
-    import Skills from './Skills.svelte';
-    import Education from './Education.svelte';
-    import Footer from './Footer.svelte';
-  
+    import NavBar from "$lib/static/NavBar.svelte";
+    import Intro from "$lib/static/Intro.svelte";
+    import Summary from '$lib/static/Summary.svelte';
+    import Employment from '$lib/static/Employment.svelte';
+    import Projects from '$lib/static/Projects.svelte';
+    import Skills from '$lib/static/Skills.svelte';
+    import Education from '$lib/static/Education.svelte';
+    import Footer from '$lib/static/Footer.svelte';
+
     export let info: Info;
 </script>
 
