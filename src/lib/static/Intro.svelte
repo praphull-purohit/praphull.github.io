@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { browser, dev } from '$app/env';
+    import { browser} from '$app/env';
     export const hydrate = false;
     export const router = browser;
     export const prerender = true;
@@ -11,7 +11,6 @@
     export let info: Info;
   
     let show = false;
-    //import { slide } from 'svelte/transition';
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     onMount(() => {
@@ -51,27 +50,35 @@
         </figure>
       </div>
       <div class="column is-full-mobile is-two-thirds-desktop" transition:fade="{{delay: 150, duration: 300}}">
-        <Content header="Praphull Purohit" headerSize={4}>Polyglot Developer - Bengaluru, India.</Content>
+        <Content header="Praphull Purohit" headerSize={4}>
+          Staff Engineer & Team Lead at Truecaller<br />
+          Polyglot Developer - Bengaluru, India.
+        </Content>
         <div class="content">
-          <div class="content" transition:fade="{{delay: 150, duration: 300}}">I am a polyglot developer with {years} years of professional software development experience
+          <div class="content" transition:fade="{{delay: 150, duration: 300}}">I am a
+            <Tip tip="Primarily backend, but often I develop for web, android and anything else I can try my hands on">polyglot developer</Tip>
+            with {years} years of professional software development experience
             in building <strong>reactive microservices</strong>, <strong>enterprise products</strong> and legacy
             applications across a range of programming languages.
           </div>
   
           <div class="content" transition:fade="{{delay: 300, duration: 300}}">
             For past {months} months, I've been working with <strong>Truecaller</strong>, owning the backend microservices
-            (Scala, Java, Cassandra) for its developer platform and SDKs (Android, iOS & mobile web).
-            Prior to Truecaller, I worked for 4 years on developing reactive microservices for
-            <Tip tip="Valued at ~$970 million during series D in Feb 2019, totalling VC infusion to $304 million">almost billion dollar</Tip>
-            fashion eCommerce startup <strong>Zilingo</strong> using <strong>
-              <Tip tip="A functional & object oriented programming language running on JVM">Scala</Tip>,
-              <Tip tip="A reactive, concurrent, high performance programming toolkit for scale">Akka</Tip>,
-              <Tip tip="A MVC framework built on top of Akka">Play Framework</Tip> and
-              <Tip tip="A high-throughput stream processing platform">Kafka</Tip></strong>.
+            (<strong><Tip tip="A functional & object oriented programming language running on JVM">Scala</Tip>,
+            <Tip tip="A distributed, wide-column store, NoSQL DBMS designed to handle large amounts of data, providing high availability with no single point of failure.">Cassandra</Tip>,
+            <Tip tip="A reactive, concurrent, high performance programming toolkit for scale">Akka</Tip>,
+            <Tip tip="A MVC framework built on top of Akka">Play Framework</Tip>,
+            <Tip tip="A container orchestration system for automating software deployment, scaling, and management.">Kubernetes</Tip>
+            and Java</strong>) for its developer platform and SDKs (Android, iOS, mobile web & Shopify).
+            Prior to Truecaller, I worked for 4 years on developing reactive microservices for fashion e-commerce startup
+            <strong>Zilingo</strong> using <strong>Scala, Akka, Play Framework and
+            <Tip tip="A high-throughput stream processing platform">Kafka</Tip></strong>,
+            scaling its logistics tech, from seed-fund round to
+            <Tip tip="Valued at ~$970 million during series D in Feb 2019, totalling VC infusion to $304 million">almost billion dollar valuation</Tip>.
           </div>
   
           <div class="content" transition:fade="{{delay: 450, duration: 300}}">
-            I have experience developing software for <b>Communications</b>, <b>e-Commerce</b>, <b>Logistics</b>,<b>Supply
+            I have experience developing software for <b>Communications</b>, <b>e-Commerce</b>, <b>Logistics</b>, <b>Supply
             Chain</b>, <b>Aircraft maintenance</b> and <b>Energy</b> industries, and I'm open to exploring new business domains.
           </div>
         </div>

@@ -10,9 +10,9 @@
 </script>
 
 <div class="container">
-  <Content header="{position}" headerClass="content eh-header">
+  <Content header="{position}" headerClass="content eh-header" anchor="employment-details-{chronology}">
     {#if url}
-    <a name="employment-details-{chronology}" href="{url}" target="_blank">{company}</a>
+    <a href="{url}" target="_blank">{company}</a>
     {:else}
     {company}
     {/if}
