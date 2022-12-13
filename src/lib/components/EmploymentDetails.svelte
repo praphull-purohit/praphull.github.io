@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import Content from "./Content.svelte";
   export let start: string;
   export let end: string | undefined = undefined;

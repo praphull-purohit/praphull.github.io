@@ -1,8 +1,8 @@
-<script type="ts">
-  import { browser } from '$app/env';
-  export const hydrate = false;
-  export const router = browser;
-  export const prerender = true;
+<script lang="ts">
+  // import { browser } from '$app/environment';
+  // export const hydrate = false;
+  // export const router = browser;
+  // export const prerender = true;
   import WideSection from '../components/WideSection.svelte';
   import EmploymentDetails from '../components/EmploymentDetails.svelte';
   import Tip from '../components/Tip.svelte';

@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
 	export let header: string;
 	export let url: string | undefined = undefined;
 	export let icon: string | undefined = undefined;

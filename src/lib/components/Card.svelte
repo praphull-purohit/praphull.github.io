@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   export let header: string;
   export let icon: string;
 </script>

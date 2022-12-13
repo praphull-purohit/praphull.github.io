@@ -1,9 +1,12 @@
 <script lang="ts">
-    import { browser, dev } from "$app/env";
+    /** @type {import('./$types').PageData */
+    export let data;
+    export let { info } = data;
+
+    import { browser, dev } from "$app/environment";
     export const hydrate = dev;
     export const router = browser;
     export const prerender = true;
-    import type { Info } from "$lib/types";
 
     import NavBar from "$lib/static/NavBar.svelte";
     import Intro from "$lib/static/Intro.svelte";
@@ -14,7 +17,6 @@
     import Education from "$lib/static/Education.svelte";
     import Footer from "$lib/static/Footer.svelte";
 
-    export let info: Info;
 </script>
 
 <NavBar {info} />

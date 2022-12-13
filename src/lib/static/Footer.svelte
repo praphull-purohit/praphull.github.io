@@ -1,10 +1,12 @@
-<script type="ts">
-  import { browser } from '$app/env';
-  export const hydrate = false;
-  export const router = browser;
-  export const prerender = true;
+<script lang="ts">
+  // import { browser } from '$app/environment';
+  // export const hydrate = false;
+  // export const router = browser;
+  // export const prerender = true;
+
   import type { Info } from '../types';
   export let info: Info;
+
   let show = false;
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';

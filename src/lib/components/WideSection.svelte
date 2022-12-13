@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import EmptySection from './EmptySection.svelte';
 
   export let icon: string;

@@ -1,7 +1,6 @@
-import type { Handle } from '@sveltejs/kit';
-import type { Info } from "./lib/types";
+import type { Info } from "../lib/types";
 
-export const handle: Handle = async ({ event, resolve }) => {
+const getInfo = () => {
     const now = new Date().getTime();
     const timeDiff = (start: string, end?: string) => {
         const s = Date.parse(start);
@@ -107,11 +106,11 @@ export const handle: Handle = async ({ event, resolve }) => {
             ]
         }
     };
+    return info;
+}
 
-    //event.locals.foo = "bar";
-    event.locals.info = info;
-
-    const response = await resolve(event);
-
-    return response;
+export const load: import('./$types').PageData = ({ }) => {
+    return {
+        info: getInfo()
+    };
 };

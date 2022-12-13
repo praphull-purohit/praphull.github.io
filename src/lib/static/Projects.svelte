@@ -1,8 +1,8 @@
 <script lang="ts" context="module">
-  import { browser } from '$app/env';
-  export const hydrate = false;
-  export const router = browser;
-  export const prerender = true;
+  // import { browser } from '$app/environment';
+  // export const hydrate = false;
+  // export const router = browser;
+  // export const prerender = true;
   import WideSection from '../components/WideSection.svelte';
   import Content from '../components/Content.svelte';
   const headerSize = 6;

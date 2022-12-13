@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import "../app.scss";
 
   //import NavBar from "../lib/static/NavBar.svelte";
@@ -6,6 +6,7 @@
 
   //import type { Info } from "$lib/types";
   //export let info: Info;
+  export const prerender = true;
 </script>
 
 <slot />

@@ -1,12 +1,12 @@
-<script type="ts">
-  import { browser } from '$app/env';
-  export const hydrate = false;
-  export const router = browser;
-  export const prerender = true;
-  import type { Info } from '../types';
+<script lang="ts">
+  // import { browser } from '$app/environment';
+  // export const hydrate = false;
+  // export const router = browser;
+  // export const prerender = true;
   import WideSection from '../components/WideSection.svelte';
   import Content from '../components/Content.svelte';
   const headerSize = 5;
+  import type { Info } from '../types';
   export let info: Info;
 </script>
 

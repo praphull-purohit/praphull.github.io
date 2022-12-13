@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { browser } from '$app/env';
-    export const hydrate = false;
-    export const router = browser;
-    export const prerender = true;
+    // import { browser } from '$app/environment';
+    // export const hydrate = false;
+    // export const router = browser;
+    // export const prerender = true;
     import type { Info } from '../types';
 
     import EmptySection from '../components/EmptySection.svelte';
