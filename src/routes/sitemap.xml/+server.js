@@ -1,11 +1,6 @@
-export async function get() {
-  const headers = {
-    'Cache-Control': 'max-age=0, s-maxage=3600',
-    'Content-Type': 'application/xml',
-  }
-  return {
-    headers,
-    body: `<?xml version="1.0" encoding="UTF-8" ?>
+export async function GET() {
+  return new Response(
+    `<?xml version="1.0" encoding="UTF-8" ?>
     <urlset
       xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:news="https://www.google.com/schemas/sitemap-news/0.9"
@@ -16,8 +11,14 @@ export async function get() {
     >
         <url>
           <loc>https://praphull.com/</loc>
-          <lastmod>2022-12-13</lastmod>
+          <lastmod>2022-12-14</lastmod>
         </url>
-    </urlset>`,
-  }
+    </urlset>`.trim(),
+    {
+      headers: {
+        'Cache-Control': 'max-age=0, s-maxage=3600',
+        'Content-Type': 'application/xml'
+      }
+    },
+  );
 }
