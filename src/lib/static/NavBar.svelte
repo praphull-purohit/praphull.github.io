@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { browser, dev } from '$app/env';
+  import { browser } from "$app/env";
   export const hydrate = false;
   export const router = browser;
   export const prerender = true;
@@ -21,6 +21,7 @@
               class="button"
               href={contact.url}
               target="_blank"
+              rel="noreferrer"
               title={contact.name}
             >
               <span class="icon"><i class="icon-themed {contact.icon}" /></span>

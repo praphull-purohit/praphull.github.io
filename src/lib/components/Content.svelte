@@ -21,9 +21,9 @@
           {/if}
         {:else}
           {#if anchor}
-            <a class="is-link" href="{url}" target="_blank" name="{anchor}">{header}</a>
+            <a class="is-link" href="{url}" target="_blank" rel="noreferrer" name="{anchor}">{header}</a>
           {:else}
-            <a class="is-link" href="{url}" target="_blank">{header}</a>
+            <a class="is-link" href="{url}" target="_blank" rel="noreferrer">{header}</a>
           {/if}
         {/if}
       {:else}

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { browser, dev } from '$app/env';
+    import { browser, dev } from "$app/env";
     export const hydrate = dev;
     export const router = browser;
     export const prerender = true;
@@ -7,12 +7,12 @@
 
     import NavBar from "$lib/static/NavBar.svelte";
     import Intro from "$lib/static/Intro.svelte";
-    import Summary from '$lib/static/Summary.svelte';
-    import Employment from '$lib/static/Employment.svelte';
-    import Projects from '$lib/static/Projects.svelte';
-    import Skills from '$lib/static/Skills.svelte';
-    import Education from '$lib/static/Education.svelte';
-    import Footer from '$lib/static/Footer.svelte';
+    import Summary from "$lib/static/Summary.svelte";
+    import Employment from "$lib/static/Employment.svelte";
+    import Projects from "$lib/static/Projects.svelte";
+    import Skills from "$lib/static/Skills.svelte";
+    import Education from "$lib/static/Education.svelte";
+    import Footer from "$lib/static/Footer.svelte";
 
     export let info: Info;
 </script>
@@ -27,6 +27,7 @@
             <a
                 href="https://www.youracclaim.com/badges/{certification.certificateId}/embedded"
                 target="_blank"
+                rel="noreferrer"
                 class="is-inline-flex"
             >
                 <figure class="image is-96x96">
@@ -43,9 +44,9 @@
     </div>
 </div>
 
-<Summary {info}></Summary>
-<Employment></Employment>
-<Projects></Projects>
-<Skills {info}></Skills>
-<Education></Education>
-<Footer {info}></Footer>
+<Summary {info} />
+<Employment />
+<Projects />
+<Skills {info} />
+<Education />
+<Footer {info} />

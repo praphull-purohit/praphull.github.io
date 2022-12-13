@@ -1,5 +1,5 @@
 <script type="ts">
-  import { browser, dev } from '$app/env';
+  import { browser } from '$app/env';
   export const hydrate = false;
   export const router = browser;
   export const prerender = true;
@@ -15,19 +15,23 @@
   <EmploymentDetails {...edConfig} chronology={9} position="Staff Engineer & Team Lead" company="Truecaller"
                      start="July 2022"
                      end="Present"
-                     url="https://www.truecaller.com">
+                     url="https://www.truecaller.com"
+                     team="Truecaller for Developers"
+                     productURL="https://developer.truecaller.com">
     <ul>
-      <li>Leading an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank">Truecaller SDK</a> development.</li>
+      <li>Leading an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank" rel="noreferrer">Truecaller SDK</a> development.</li>
       <li>Working on features not yet publicly accessible and leading a critical data migration from a legacy DB to a new DB</li>
     </ul>
   </EmploymentDetails>
   <EmploymentDetails {...edConfig} chronology={8} position="Senior Backend Engineer & Team Lead" company="Truecaller"
                      start="January 2021"
                      end="June 2022"
-                     url="https://www.truecaller.com">
+                     url="https://www.truecaller.com"
+                     team="Truecaller for Developers"
+                     productURL="https://apps.shopify.com/truecaller">
     <ul>
-      <li>Led an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank">Truecaller SDK</a> development.</li>
-      <li>Built a <b><a href="https://apps.shopify.com/truecaller" target="_blank">Shopify App</a></b>, to enable number verification by Truecaller in Shopify ecosystem.
+      <li>Led an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank" rel="noreferrer">Truecaller SDK</a> development.</li>
+      <li>Built a <b><a href="https://apps.shopify.com/truecaller" target="_blank" rel="noreferrer">Shopify App</a></b>, to enable number verification by Truecaller in Shopify ecosystem.
         <ul>
           <li>Built the backend service for this implementation from scratch, implementing Shopify's OAuth 2.0 flow and a custom authentication
             layer for app configuration flows.
@@ -48,9 +52,11 @@
   <EmploymentDetails {...edConfig} chronology={7} position="Senior Software Engineer" company="Truecaller"
                      start="July 2020"
                      end="December 2020"
-                     url="https://www.truecaller.com">
+                     url="https://www.truecaller.com"
+                     team="Truecaller for Developers"
+                     productURL="https://developer.truecaller.com">
     <ul>
-      <li>Took over the backend development for <a href="https://developer.truecaller.com" target="_blank">Truecaller SDK</a> and developer ecosystem</li>
+      <li>Took over the backend development for <a href="https://developer.truecaller.com" target="_blank" rel="noreferrer">Truecaller SDK</a> and developer ecosystem</li>
       <li>
         Handled development/evolution of multiple microservices (<b>Scala, Java, Play Framework, Dropwizard, gRPC, Cassandra</b>)
         deployed over Kubernetes on <Tip tip="Google Cloud Platform">GCP</Tip> and on-premise data center. These services
@@ -80,7 +86,8 @@
   </EmploymentDetails>
   <EmploymentDetails {...edConfig} chronology={6} position="Junior Vice President, Logistics Tech" company="Zilingo"
                      start="June 2016"
-                     end="June 2020" url="https://zilingo.com">
+                     end="June 2020" url="https://zilingo.com"
+                     team="Logistics">
     <ul>
       <li>Rewrote the logistics API integrations system from scratch using <b>Akka Actor system</b> for handling
         <b>thousands of concurrent operations</b>. Scaled the system from 1 API integration to
@@ -129,7 +136,9 @@
   <EmploymentDetails {...edConfig} chronology={5} position="Senior Applications Engineer" company="Oracle"
                      start="November 2014"
                      end="June 2016"
-                     url="https://www.oracle.com/in/applications/supply-chain-management/manufacturing/">
+                     url="https://www.oracle.com/in/"
+                     team="Oracle Fusion SCM - Manufacturing"
+                     productURL="https://www.oracle.com/in/scm/manufacturing/">
     <ul>
       <li>Worked in Oracle Fusion SCM - <b>Manufacturing</b> software development team for 1 year</li>
       <li>
@@ -139,7 +148,9 @@
   </EmploymentDetails>
   <EmploymentDetails {...edConfig} chronology={4} position="Applications Engineer" company="Oracle" start="March 2012"
                      end="November 2014"
-                     url="https://www.oracle.com/a/ocom/docs/industries/oracle-cmro-045277.pdf">
+                     url="https://www.oracle.com/a/ocom/docs/industries/oracle-cmro-045277.pdf"
+                     team="Oracle E-Business Suite - CMRO"
+                     productURL="https://docs.oracle.com/cd/E26401_01/doc.122/e49035/T616680T616684.htm#6968304">
     <ul>
       <li>Worked in Oracle EBS development team, for their <b>CMRO</b> product (Complex <b>Maintenance, Repair and Overhaul</b>)
         that's used for <b>configuration management, planning & execution</b> of MRO activities on <b>aeroplanes</b>,

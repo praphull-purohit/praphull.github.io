@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-  import { browser, dev } from '$app/env';
+  import { browser } from '$app/env';
   export const hydrate = false;
   export const router = browser;
   export const prerender = true;
@@ -12,10 +12,10 @@
   <div class="content">
     <Content {headerSize} header="Sudoku Solver (2020)">
       DFS implementation to solve 9x9
-      <b><a href="https://github.com/praphull/sudoku-solver" target="_blank">Sudoku Boards</a></b>(<b>Scala</b>)
+      <b><a href="https://github.com/praphull/sudoku-solver" target="_blank" rel="noreferrer">Sudoku Boards</a></b>(<b>Scala</b>)
     </Content>
     <Content {headerSize} header="Financial Functions Library (2020)">
-      <b><a href="https://github.com/praphull/scala-finance" target="_blank">Scala library</a></b> of commonly used
+      <b><a href="https://github.com/praphull/scala-finance" target="_blank" rel="noreferrer">Scala library</a></b> of commonly used
       financial functions (e.g. <b>XIRR, NPV</b>)
     </Content>
     <Content {headerSize} header="Android app & backend (2015-16)">
@@ -24,7 +24,7 @@
     </Content>
     <Content {headerSize} header="Android ROM Building (2011-12)">
       Tried my hands on building AOSP to understand the build processes, and created a working AOSP port for
-      Samsung Galaxy Ace (<a href="https://source.android.com" target="_blank"> Android Open Source Project</a>, C)
+      Samsung Galaxy Ace (<a href="https://source.android.com" target="_blank" rel="noreferrer"> Android Open Source Project</a>, C)
     </Content>
     <Content {headerSize} header="Virtual Classroom (IBM TGMC 2008)">
       Online lecture delivery and collaboration platform <b>(J2EE, Websphere Application Server, DB2)</b>

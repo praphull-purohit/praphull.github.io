@@ -1,5 +1,5 @@
 <script type="ts">
-  import { browser, dev } from '$app/env';
+  import { browser } from '$app/env';
   export const hydrate = false;
   export const router = browser;
   export const prerender = true;
@@ -24,7 +24,7 @@
       {#each info.contactDetails as contact}
       <span class="footer-links has-text-info">
         {#if contact.url}
-        <a class="has-text-info" href="{contact.url}" target="_blank" title="{contact.name}">
+        <a class="has-text-info" href="{contact.url}" target="_blank" rel="noreferrer" title="{contact.name}">
           <i class="icon icon-themed fa-lg {contact.icon}" title="{contact.name}"></i> {contact.id}
         </a>
         {:else}
@@ -35,18 +35,18 @@
     </p>
     <br>
     <p>
-      Hosted on <strong><a href="https://netlify.com" target="_blank">Netlify</a></strong>.
-      Built using <a href="https://bulma.io" target="_blank">Bulma</a> & <a href="https://svelte.dev/" target="_blank">Svelte</a>/
-      <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>. Icons from
-      <a href="https://icomoon.io/" target="_blank">IcoMoon</a>. Page layout inspired from toptal.<br>
-      The <a href="https://github.com/praphull/praphull.github.io" target="_blank">source code</a> is licensed under
-      <a href="https://opensource.org/licenses/Apache-2.0" target="_blank">Apache License, Version 2.0</a> and everyone is free to
+      Hosted on <strong><a href="https://netlify.com" target="_blank" rel="noreferrer">Netlify</a></strong>.
+      Built using <a href="https://bulma.io" target="_blank" rel="noreferrer">Bulma</a> & <a href="https://svelte.dev/" target="_blank" rel="noreferrer">Svelte</a>/
+      <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">SvelteKit</a>. Icons from
+      <a href="https://icomoon.io/" target="_blank" rel="noreferrer">IcoMoon</a>. Page layout inspired from toptal.<br>
+      The <a href="https://github.com/praphull/praphull.github.io" target="_blank" rel="noreferrer">source code</a> is licensed under
+      <a href="https://opensource.org/licenses/Apache-2.0" target="_blank" rel="noreferrer">Apache License, Version 2.0</a> and everyone is free to
       modify & use it for their pages.<br>
       Content copyright &copy; Praphull Purohit.
     </p>
     <br>
     <p>
-      <a href="https://projecteuler.net" target="_blank" title="Project Euler Status">
+      <a href="https://projecteuler.net" target="_blank" rel="noreferrer" title="Project Euler Status">
         <img src="https://projecteuler.net/profile/praphull.png" alt="Project Euler Status">
       </a>
     </p>

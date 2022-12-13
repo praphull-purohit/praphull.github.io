@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { browser} from '$app/env';
+    import { browser } from '$app/env';
     export const hydrate = false;
     export const router = browser;
     export const prerender = true;
@@ -86,9 +86,9 @@
         <div class="content tag-container" transition:fade="{{delay: 600, duration: 300}}">
           {#each info.tags as tag}
           {#if tag.url !== undefined}
-          <a href="{tag.url}" target="_blank" title="{tag.title}"><span class="tag is-info is-light">{tag.name}</span></a>
+          <a href="{tag.url}" target="_blank" rel="noreferrer" title="{tag.title}"><span class="tag is-info is-light">{tag.name}</span></a>
           {:else}
-          <a href="https://twitter.com/hashtag/{tag.hash}" target="_blank" title="{tag.title}"><span class="tag is-info is-light">{tag.name}</span></a>
+          <a href="https://twitter.com/hashtag/{tag.hash}" target="_blank" rel="noreferrer" title="{tag.title}"><span class="tag is-info is-light">{tag.name}</span></a>
           {/if}
           {/each}
         </div>
