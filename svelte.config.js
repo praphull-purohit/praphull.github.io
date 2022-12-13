@@ -17,7 +17,7 @@ const config = {
   ],
 
   paths: {
-    base: dev ? '' : '/praphull.github.io',
+    base: dev ? '' : '/praphull.com',
   },
 
   kit: {

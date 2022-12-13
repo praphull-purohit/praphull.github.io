@@ -1,5 +1,7 @@
 import type { Info } from "../lib/types";
 
+export const prerender = true;
+
 const getInfo = () => {
     const now = new Date().getTime();
     const timeDiff = (start: string, end?: string) => {
