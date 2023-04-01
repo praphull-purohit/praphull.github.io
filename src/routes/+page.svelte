@@ -6,7 +6,6 @@
     import { browser, dev } from "$app/environment";
     export const hydrate = dev;
     export const router = browser;
-    export const prerender = true;
 
     import NavBar from "$lib/static/NavBar.svelte";
     import Intro from "$lib/static/Intro.svelte";
