@@ -9,6 +9,8 @@
   export let contentClass = "content";
   export let team: string | undefined = undefined;
   export let productURL: string | undefined = undefined;
+  export let city: string | undefined = undefined;
+  export let country: string | undefined = undefined;
 </script>
 
 <div class="container">
@@ -30,6 +32,12 @@
       {/if}
     {/if}
     | {start} &dash; {end}
+    {#if city}
+      | {city}
+      {#if country}
+        , {country}
+      {/if}
+    {/if}
   </Content>
   <div class={contentClass}>
     <slot />

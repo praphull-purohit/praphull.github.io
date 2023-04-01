@@ -25,12 +25,12 @@
   <div class="columns" transition:fade="{{delay: 150, duration: 300}}">
     <div class="column is-one-third" transition:fade="{{delay: 150, duration: 300}}">
       <Content {headerSize} header="Summary" icon="icon-list-ul-fa">
-        <Content {...summaryConfig} url="#employment-details-9" header="Truecaller">
-          Scala, Play Framework, Java, gRPC, Protobuf, Kafka, MariaDB, Cassandra, Shopify
+        <Content {...summaryConfig} url="#employment-details-10" header="Truecaller">
+          Scala, Play Framework, Go, gRPC, Protobuf, Cassandra, Java, Kafka, MariaDB, Shopify
         </Content>
         <Content {...summaryConfig} url="#employment-details-6" header="Zilingo">
-          Scala, Play Framework, PostgreSQL, Kafka, Webhooks, MongoDB, FoundationJS, Bulma, JavaScript, HTML, REST,
-          SOAP, XML
+          Scala, Play Framework, PostgreSQL, Kafka, Webhooks, MongoDB, FoundationJS, Bulma,
+          JavaScript, HTML, REST, SOAP, XML
         </Content>
         <Content {...summaryConfig} url="#employment-details-5" header="Oracle">
           Java, ADF, Oracle/PLSQL, SOAP Web services, UTPLSQL, OAF, XML

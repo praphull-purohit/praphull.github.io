@@ -6,25 +6,47 @@
     contentClass: "content eh-content"
   }
 </script>
-
+<!-- Flag Icons: https://unicode.org/emoji/charts/full-emoji-list.html#country-flag -->
 <WideSection icon="icon-briefcase-fa" title="Employment History" startDelay={900} duration={300}>
-  <EmploymentDetails {...edConfig} chronology={9} position="Staff Engineer & Team Lead" company="Truecaller"
-                     start="July 2022"
+  <EmploymentDetails {...edConfig} chronology={10} position="Staff Software Engineer" company="Truecaller"
+                     start="March 2023"
                      end="Present"
                      url="https://www.truecaller.com"
-                     team="Truecaller for Developers"
-                     productURL="https://developer.truecaller.com">
+                     team="Plaform Backend/Cloud Infrastructure"
+                     city="Stockholm"
+                     country="Sweden &#x1F1F8;&#x1F1EA;">
     <ul>
-      <li>Leading an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank" rel="noreferrer">Truecaller SDK</a> development.</li>
-      <li>Working on features not yet publicly accessible and leading a critical data migration from a legacy DB to a new DB</li>
+      <li>Working on core tools, services and infrastructure for development teams in Sweden, India, Israel & Poland.</li>
+    </ul>
+  </EmploymentDetails>
+  <EmploymentDetails {...edConfig} chronology={9} position="Staff Engineer & Team Lead" company="Truecaller"
+                     start="July 2022"
+                     end="March 2023"
+                     url="https://www.truecaller.com"
+                     team="Developers Solutions"
+                     productURL="https://developer.truecaller.com"
+                     city="Bengaluru"
+                     country="India &#x1F1EE;&#x1F1F3;">
+    <ul>
+      <li>Led an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank" rel="noreferrer">Truecaller SDK</a> development.</li>
+      <li>Worked on features not yet publicly released</li>
+      <li>Led a critical data migration from a MariaDB to Scylla (Cassandra)</li>
+      <li>Created a new version of a reference client framework in Java, using Truecaller's Business Messaging gRPC APIs,
+        complete with auto-recovery mechanisms with exponential backoff, currently being used by business customers to
+        send millions of messages on behalf of their clients, via Truecaller Business IM every day. Visited business
+        customers' development facilities to facilitate a robust integration; talking to business/tech counterparts about
+        integration issues and feature requests, and helped code review their implementation to improve stability.
+      </li>
     </ul>
   </EmploymentDetails>
   <EmploymentDetails {...edConfig} chronology={8} position="Senior Backend Engineer & Team Lead" company="Truecaller"
                      start="January 2021"
                      end="June 2022"
                      url="https://www.truecaller.com"
-                     team="Truecaller for Developers"
-                     productURL="https://apps.shopify.com/truecaller">
+                     team="Developers Solutions"
+                     productURL="https://apps.shopify.com/truecaller"
+                     city="Bengaluru"
+                     country="India &#x1F1EE;&#x1F1F3;">
     <ul>
       <li>Led an engineering team (Android, Backend, QA, Web) for <a href="https://developer.truecaller.com" target="_blank" rel="noreferrer">Truecaller SDK</a> development.</li>
       <li>Built a <b><a href="https://apps.shopify.com/truecaller" target="_blank" rel="noreferrer">Shopify App</a></b>, to enable number verification by Truecaller in Shopify ecosystem.
@@ -49,8 +71,10 @@
                      start="July 2020"
                      end="December 2020"
                      url="https://www.truecaller.com"
-                     team="Truecaller for Developers"
-                     productURL="https://developer.truecaller.com">
+                     team="Developers Solutions"
+                     productURL="https://developer.truecaller.com"
+                     city="Bengaluru"
+                     country="India &#x1F1EE;&#x1F1F3;">
     <ul>
       <li>Took over the backend development for <a href="https://developer.truecaller.com" target="_blank" rel="noreferrer">Truecaller SDK</a> and developer ecosystem</li>
       <li>
@@ -83,7 +107,9 @@
   <EmploymentDetails {...edConfig} chronology={6} position="Junior Vice President, Logistics Tech" company="Zilingo"
                      start="June 2016"
                      end="June 2020" url="https://zilingo.com"
-                     team="Logistics">
+                     team="Logistics"
+                     city="Bengaluru"
+                     country="India &#x1F1EE;&#x1F1F3;">
     <ul>
       <li>Rewrote the logistics API integrations system from scratch using <b>Akka Actor system</b> for handling
         <b>thousands of concurrent operations</b>. Scaled the system from 1 API integration to
@@ -134,7 +160,9 @@
                      end="June 2016"
                      url="https://www.oracle.com/in/"
                      team="Oracle Fusion SCM - Manufacturing"
-                     productURL="https://www.oracle.com/in/scm/manufacturing/">
+                     productURL="https://www.oracle.com/in/scm/manufacturing/"
+                     city="Bengaluru"
+                     country="India &#x1F1EE;&#x1F1F3;">
     <ul>
       <li>Worked in Oracle Fusion SCM - <b>Manufacturing</b> software development team for 1 year</li>
       <li>
@@ -146,7 +174,9 @@
                      end="November 2014"
                      url="https://www.oracle.com/a/ocom/docs/industries/oracle-cmro-045277.pdf"
                      team="Oracle E-Business Suite - CMRO"
-                     productURL="https://docs.oracle.com/cd/E26401_01/doc.122/e49035/T616680T616684.htm#6968304">
+                     productURL="https://docs.oracle.com/cd/E26401_01/doc.122/e49035/T616680T616684.htm#6968304"
+                     city="Bengaluru"
+                     country="India &#x1F1EE;&#x1F1F3;">
     <ul>
       <li>Worked in Oracle EBS development team, for their <b>CMRO</b> product (Complex <b>Maintenance, Repair and Overhaul</b>)
         that's used for <b>configuration management, planning & execution</b> of MRO activities on <b>aeroplanes</b>,
@@ -172,7 +202,9 @@
   </EmploymentDetails>
   <EmploymentDetails {...edConfig} chronology={3} position="Senior Systems Engineer" company="Infosys Limited"
                      start="October 2011"
-                     end="March 2012" url="https://www.infosys.com/">
+                     end="March 2012" url="https://www.infosys.com/"
+                     city="Mysore"
+                     country="India &#x1F1EE;&#x1F1F3;">
     <ul>
       <li>Developed a tool to <b>extract document/metadata</b> from <Tip tip="A content management software">Livelink</Tip>
         servers and store metadata as XMLs, content natively in an organized structure (<b>.Net/C#</b>).</li>
@@ -183,7 +215,9 @@
   </EmploymentDetails>
   <EmploymentDetails {...edConfig} chronology={2} position="Systems Engineer" company="Infosys Technologies Limited"
                      start="July 2009"
-                     end="October 2011">
+                     end="October 2011"
+                     city="Mysore"
+                     country="India &#x1F1EE;&#x1F1F3;">
     <ul>
       <li>Taxonomy standardization of more than 2 million documents in <b>Documentum CMS</b></li>
       <li>Production system upgrades for highly critical Documentum/Sharepoint docbases (Java, XML, Oracle)</li>
@@ -192,7 +226,9 @@
   </EmploymentDetails>
   <EmploymentDetails {...edConfig} chronology={1} position="Software Engineer, Intern"
                      company="Infosys Technologies Limited"
-                     start="January 2009" end="May 2009">
+                     start="January 2009" end="May 2009"
+                     city="Mysore"
+                     country="India &#x1F1EE;&#x1F1F3;">
     <ul>
       <li>Remote Compiler - <b>Web-based IDE and compilation/execution environment</b> for various programming languages
         (C, C++, Java). Generalized the UI widgets created for the project as reusable component library (<b>J2EE,

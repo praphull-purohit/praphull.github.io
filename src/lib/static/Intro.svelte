@@ -46,9 +46,9 @@
         </figure>
       </div>
       <div class="column is-full-mobile is-two-thirds-desktop" transition:fade="{{delay: 150, duration: 300}}">
-        <Content header="Praphull Purohit" headerSize={4}>
-          Staff Engineer & Team Lead at Truecaller<br />
-          Polyglot Developer - Bengaluru, India.
+        <Content header="Praphull Purohit &#x1F1F8;&#x1F1EA; &#x1F1EE;&#x1F1F3;" headerSize={4}>
+          Staff Software Engineer at Truecaller<br />
+          Polyglot Developer - Stockholm, Sverige.
         </Content>
         <div class="content">
           <div class="content" transition:fade="{{delay: 150, duration: 300}}">I am a
@@ -59,20 +59,27 @@
           </div>
   
           <div class="content" transition:fade="{{delay: 300, duration: 300}}">
-            For past {months} months, I've been working with <strong>Truecaller</strong>, owning the backend microservices
+            For past {months} months, I've been working with <strong>Truecaller</strong> across different teams
+            in Stockholm, Sweden and Bengaluru, India. I am currently working in the Truecaller HQ at Stockholm,
+            as a backend software engineer in Plaform/Cloud Infrastructure team, responsible for providing core
+            tooling, services and infrastructure for the Truecaller developers in India, Sweden, Israel & Poland.
+            Before my transfer to this role in Stockholm, I owned the backend microservices
             (<strong><Tip tip="A functional & object oriented programming language running on JVM">Scala</Tip>,
             <Tip tip="A distributed, wide-column store, NoSQL DBMS designed to handle large amounts of data, providing high availability with no single point of failure.">Cassandra</Tip>,
             <Tip tip="A reactive, concurrent, high performance programming toolkit for scale">Akka</Tip>,
             <Tip tip="A MVC framework built on top of Akka">Play Framework</Tip>,
             <Tip tip="A container orchestration system for automating software deployment, scaling, and management.">Kubernetes</Tip>
-            and Java</strong>) for its developer platform and SDKs (Android, iOS, mobile web & Shopify).
+            and Java</strong>) for Truecaller's developer platform and SDKs (Android, iOS, mobile web & Shopify).
+          </div>
+
+          <div class="content" transition:fade="{{delay: 300, duration: 300}}">
             Prior to Truecaller, I worked for 4 years on developing reactive microservices for fashion e-commerce startup
             <strong>Zilingo</strong> using <strong>Scala, Akka, Play Framework and
             <Tip tip="A high-throughput stream processing platform">Kafka</Tip></strong>,
             scaling its logistics tech, from seed-fund round to
             <Tip tip="Valued at ~$970 million during series D in Feb 2019, totalling VC infusion to $304 million">almost billion dollar valuation</Tip>.
           </div>
-  
+
           <div class="content" transition:fade="{{delay: 450, duration: 300}}">
             I have experience developing software for <b>Communications</b>, <b>e-Commerce</b>, <b>Logistics</b>, <b>Supply
             Chain</b>, <b>Aircraft maintenance</b> and <b>Energy</b> industries, and I'm open to exploring new business domains.
