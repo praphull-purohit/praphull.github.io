@@ -5,6 +5,7 @@
   const edConfig = {
     contentClass: "content eh-content"
   }
+  export const prerender = true;
 </script>
 <!-- Flag Icons: https://unicode.org/emoji/charts/full-emoji-list.html#country-flag -->
 <WideSection icon="icon-briefcase-fa" title="Employment History" startDelay={900} duration={300}>

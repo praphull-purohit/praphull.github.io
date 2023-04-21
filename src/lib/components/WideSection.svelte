@@ -7,13 +7,16 @@
   export let startDelay: number;
   export let duration: number = 300;
 
-  let show = false;
-  //import { slide } from 'svelte/transition';
+  let show = true;
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
   onMount(() => {
-   show = true;
+   show = false;
+   window.setTimeout(function() {
+     show = true;
+   }, 50)
   });
+  export const prerender = true;
 </script>
 {#if show}
 <EmptySection>

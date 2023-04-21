@@ -6,12 +6,16 @@
     import Tip from '../components/Tip.svelte';
     export let info: Info;
   
-    let show = false;
+    let show = true;
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     onMount(() => {
-     show = true;
+     show = false;
+     window.setTimeout(function() {
+       show = true;
+     }, 50)
     });
+    export const prerender = true;
   
     const dd = function(d1: Date, d2: Date) {
      const rev = d1.getTime() > d2.getTime();
