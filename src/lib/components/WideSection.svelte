@@ -20,7 +20,7 @@
 </script>
 {#if show}
 <EmptySection>
-  <div class="columns" transition:fade="{{delay: startDelay, duration: duration}}">
+  <div class="columns" transition:fade|global="{{delay: startDelay, duration: duration}}">
     <div class="column is-one-third is-size-4">
       <i class="icon-themed {icon}"></i> {title}
     </div>

@@ -45,24 +45,24 @@
   <EmptySection>
     <div class="columns">
       <div class="column is-one-third has-text-centered is-hidden-touch">
-        <figure class="image is-1by1" transition:fade="{{delay: 150, duration: 300}}">
+        <figure class="image is-1by1" transition:fade|global="{{delay: 150, duration: 300}}">
           <img src="../images/pp.jpg" alt="Praphull Purohit">
         </figure>
       </div>
-      <div class="column is-full-mobile is-two-thirds-desktop" transition:fade="{{delay: 150, duration: 300}}">
+      <div class="column is-full-mobile is-two-thirds-desktop" transition:fade|global="{{delay: 150, duration: 300}}">
         <Content header="Praphull Purohit &#x1F1F8;&#x1F1EA; &#x1F1EE;&#x1F1F3;" headerSize={4}>
           Staff Software Engineer at Truecaller<br />
           Polyglot Developer - Stockholm, Sverige.
         </Content>
         <div class="content">
-          <div class="content" transition:fade="{{delay: 150, duration: 300}}">I am a
+          <div class="content" transition:fade|global="{{delay: 150, duration: 300}}">I am a
             <Tip tip="Primarily backend, but often I develop for web, android and anything else I can try my hands on">polyglot developer</Tip>
             with {years} years of professional software development experience
             in building <strong>reactive microservices</strong>, <strong>enterprise products</strong> and legacy
             applications across a range of programming languages.
           </div>
   
-          <div class="content" transition:fade="{{delay: 300, duration: 300}}">
+          <div class="content" transition:fade|global="{{delay: 300, duration: 300}}">
             For past {months} months, I've been working with <strong>Truecaller</strong> across different teams
             in Stockholm, Sweden and Bengaluru, India. I am currently working in the Truecaller HQ at Stockholm,
             as a backend software engineer in Plaform/Cloud Infrastructure team, responsible for providing core
@@ -76,7 +76,7 @@
             and Java</strong>) for Truecaller's developer platform and SDKs (Android, iOS, mobile web & Shopify).
           </div>
 
-          <div class="content" transition:fade="{{delay: 300, duration: 300}}">
+          <div class="content" transition:fade|global="{{delay: 300, duration: 300}}">
             Prior to Truecaller, I worked for 4 years on developing reactive microservices for fashion e-commerce startup
             <strong>Zilingo</strong> using <strong>Scala, Akka, Play Framework and
             <Tip tip="A high-throughput stream processing platform">Kafka</Tip></strong>,
@@ -84,13 +84,13 @@
             <Tip tip="Valued at ~$970 million during series D in Feb 2019, totalling VC infusion to $304 million">almost billion dollar valuation</Tip>.
           </div>
 
-          <div class="content" transition:fade="{{delay: 450, duration: 300}}">
+          <div class="content" transition:fade|global="{{delay: 450, duration: 300}}">
             I have experience developing software for <b>Communications</b>, <b>e-Commerce</b>, <b>Logistics</b>, <b>Supply
             Chain</b>, <b>Aircraft maintenance</b> and <b>Energy</b> industries, and I'm open to exploring new business domains.
           </div>
         </div>
   
-        <div class="content tag-container" transition:fade="{{delay: 600, duration: 300}}">
+        <div class="content tag-container" transition:fade|global="{{delay: 600, duration: 300}}">
           {#each info.tags as tag}
           {#if tag.url !== undefined}
           <a href="{tag.url}" target="_blank" rel="noreferrer" title="{tag.title}"><span class="tag is-info is-light">{tag.name}</span></a>
