@@ -12,7 +12,7 @@ export async function GET() {
     >
         <url>
           <loc>https://praphull.com/</loc>
-          <lastmod>2023-07-24</lastmod>
+          <lastmod>2023-08-08</lastmod>
         </url>
     </urlset>`.trim(),
     {
