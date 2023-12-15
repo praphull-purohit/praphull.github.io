@@ -8,10 +8,10 @@
   <div class="content">
     <Content {headerSize} header="Sudoku Solver (2020)">
       DFS implementation to solve 9x9
-      <b><a href="https://github.com/praphull/sudoku-solver" target="_blank" rel="noreferrer">Sudoku Boards</a></b>(<b>Scala</b>)
+      <b><a href="https://github.com/praphull-purohit/sudoku-solver" target="_blank" rel="noreferrer">Sudoku Boards</a></b>(<b>Scala</b>)
     </Content>
     <Content {headerSize} header="Financial Functions Library (2020)">
-      <b><a href="https://github.com/praphull/scala-finance" target="_blank" rel="noreferrer">Scala library</a></b> of commonly used
+      <b><a href="https://github.com/praphull-purohit/scala-finance" target="_blank" rel="noreferrer">Scala library</a></b> of commonly used
       financial functions (e.g. <b>XIRR, NPV</b>)
     </Content>
     <Content {headerSize} header="Android app & backend (2015-16)">

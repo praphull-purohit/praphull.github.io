@@ -40,7 +40,7 @@
       Built using <a href="https://bulma.io" target="_blank" rel="noreferrer">Bulma</a> & <a href="https://svelte.dev/" target="_blank" rel="noreferrer">Svelte</a>/
       <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">SvelteKit</a>. Icons from
       <a href="https://icomoon.io/" target="_blank" rel="noreferrer">IcoMoon</a>. Page layout inspired from toptal.<br>
-      The <a href="https://github.com/praphull/praphull.github.io" target="_blank" rel="noreferrer">source code</a> is licensed under
+      The <a href="https://to.praphull.com/github" target="_blank" rel="noreferrer">source code</a> is licensed under
       <a href="https://opensource.org/licenses/Apache-2.0" target="_blank" rel="noreferrer">Apache License, Version 2.0</a> and everyone is free to
       modify & use it for their pages.<br>
       Content copyright &copy; Praphull Purohit.

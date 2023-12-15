@@ -10,7 +10,7 @@ Install the dependencies
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
 ```bash
-git clone git@github.com:praphull/praphull.github.io.git
+git clone git@github.com:praphull-purohit/praphull.github.io.git
 cd praphull.github.io 
 yarn install
 ```
@@ -18,10 +18,10 @@ yarn install
 Test locally:
 
 ```bash
-npm run dev
+yarn dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+yarn dev -- --open
 ```
 
 ## Building
@@ -29,10 +29,10 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+yarn build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `yarn preview`.
 
 ## Hosting
 The app is hosted using [Netlify](https://netlify.com), by using default configurations.

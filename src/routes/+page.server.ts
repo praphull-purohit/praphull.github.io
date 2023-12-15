@@ -63,8 +63,8 @@ const getInfo = () => {
             { name: "Cloud Functions", title: "Google Cloud Functions", hash: "cloudfunctions" },
         ],
         contactDetails: [
-            { name: "LinkedIn", icon: "icon-linkedin-square-fa", id: "praphull8888", url: "https://in.linkedin.com/in/praphull8888" },
-            { name: "GitHub", icon: "icon-github-square-fa", id: "praphull", url: "https://github.com/praphull" },
+            { name: "LinkedIn", icon: "icon-linkedin-square-fa", id: "praphull8888", url: "https://to.praphull.com/linkedin" },
+            { name: "GitHub", icon: "icon-github-square-fa", id: "praphull", url: "https://to.praphull.com/github" },
             { name: "Skype", icon: "icon-skype-fa", id: "praphull.purohit" },
             { name: "Email", icon: "icon-envelope-fa", id: "praphull8888 [at] gmail" }
         ],
