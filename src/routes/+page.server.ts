@@ -64,7 +64,7 @@ const getInfo = () => {
         ],
         contactDetails: [
             { name: "LinkedIn", icon: "icon-linkedin-square-fa", id: "praphull8888", url: "https://to.praphull.com/linkedin" },
-            { name: "GitHub", icon: "icon-github-square-fa", id: "praphull", url: "https://to.praphull.com/github" },
+            { name: "GitHub", icon: "icon-github-square-fa", id: "praphull-purohit", url: "https://to.praphull.com/github" },
             { name: "Skype", icon: "icon-skype-fa", id: "praphull.purohit" },
             { name: "Email", icon: "icon-envelope-fa", id: "praphull8888 [at] gmail" }
         ],
