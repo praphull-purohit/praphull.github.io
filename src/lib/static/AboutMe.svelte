@@ -41,11 +41,11 @@
   {#if show}
   <EmptySection title="About Me">
   <div class="content">
-    <div class="content" transition:fade|global="{{delay: 150, duration: 300}}">I am a
-      <Tip tip="Primarily backend, but often I develop for web, android and anything else I can try my hands on">polyglot developer</Tip>
-      with {years} years of professional software development experience
-      in building <strong>reactive microservices</strong>, <strong>enterprise products</strong> and legacy
-      applications across a range of programming languages.
+    <div class="content" transition:fade|global="{{delay: 150, duration: 300}}">
+      I'm a full-stack software developer with {years} years of experience in creating
+      <strong>reactive microservices</strong>, <strong>enterprise products</strong> and legacy
+      applications across various industries.
+      While my primary expertise lies in backend development, I've also dabbled in web and Android development.
     </div>
 
     <div class="content" transition:fade|global="{{delay: 300, duration: 300}}">
@@ -63,16 +63,27 @@
     </div>
 
     <div class="content" transition:fade|global="{{delay: 300, duration: 300}}">
-      Prior to Truecaller, I worked for 4 years on developing reactive microservices for fashion e-commerce startup
+      Before joining Truecaller, I spent 4 years at <strong>Zilingo</strong>, a fashion e-commerce startup.
+      During my time there, I focused on developing reactive microservices for Zilingo's logistics platform,
+      using <strong>Scala, Akka, Play Framework and
+      <Tip tip="A high-throughput stream processing platform">Kafka</Tip></strong>,
+      and contributed to the company's growth from seed-funded stage to
+      <Tip tip="Valued at ~$970 million during series D in Feb 2019, totalling VC infusion to $304 million">almost billion dollar valuation</Tip>.
+      <!-- Prior to Truecaller, I worked for 4 years on developing reactive microservices for fashion e-commerce startup
       <strong>Zilingo</strong> using <strong>Scala, Akka, Play Framework and
       <Tip tip="A high-throughput stream processing platform">Kafka</Tip></strong>,
       scaling its logistics tech, from seed-fund round to
-      <Tip tip="Valued at ~$970 million during series D in Feb 2019, totalling VC infusion to $304 million">almost billion dollar valuation</Tip>.
+      <Tip tip="Valued at ~$970 million during series D in Feb 2019, totalling VC infusion to $304 million">almost billion dollar valuation</Tip>. -->
     </div>
 
     <div class="content" transition:fade|global="{{delay: 450, duration: 300}}">
-      I have experience developing software for <b>Communications</b>, <b>e-Commerce</b>, <b>Logistics</b>, <b>Supply
-      Chain</b>, <b>Aircraft maintenance</b> and <b>Energy</b> industries, and I'm open to exploring new business domains.
+
+      Throughout my career, I've worked across various industries, including <b>Communications</b>,
+      <b>e-Commerce</b>, <b>Logistics</b>, <b>Supply Chain</b>, <b>Aircraft maintenance</b> and <b>Energy</b>.
+      I'm always eager to explore new business domains and apply my expertise to solve challenges in different industries.
+
+      <!-- I have experience developing software for <b>Communications</b>, <b>e-Commerce</b>, <b>Logistics</b>, <b>Supply
+      Chain</b>, <b>Aircraft maintenance</b> and <b>Energy</b> industries, and I'm open to exploring new business domains. -->
     </div>
   </div>
 
