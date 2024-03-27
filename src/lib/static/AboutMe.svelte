@@ -24,9 +24,16 @@
      const df = y - mn.getMonth() + mx.getMonth();
      return df > 0 ? df : 0;
     };
+
+    const durationString = (date: Date) => {
+      const months = dd(new Date(), date);
+      if (months >= 12) return `${(months / 12.0).toFixed(1)} years`;
+      const pluralMonthStr = months <= 1 ? "" : "s";
+      return `${months === 0 ? 1 : months} month${pluralMonthStr}`;
+    };
   
-    let months = dd(new Date(), new Date("01 Jul 2020"));
-    let years = (dd(new Date(), new Date("27 Jul 2009")) / 12.0).toFixed(1);
+    const currentJobDuration = durationString(new Date("1 Jul 2020"));
+    const totalExperienceDuration = durationString(new Date("27 Jul 2009"));
   </script>
   <style>
     .tag-container {
@@ -42,14 +49,14 @@
   <EmptySection title="About Me">
   <div class="content">
     <div class="content" transition:fade|global="{{delay: 150, duration: 300}}">
-      I'm a full-stack software developer with {years} years of experience in creating
+      I'm a full-stack software developer with {totalExperienceDuration} of experience in creating
       <strong>reactive microservices</strong>, <strong>enterprise products</strong> and legacy
       applications across various industries.
       While my primary expertise lies in backend development, I've also dabbled in web and Android development.
     </div>
 
     <div class="content" transition:fade|global="{{delay: 300, duration: 300}}">
-      For past {months} months, I've been working with <strong>Truecaller</strong> across different teams
+      For past {currentJobDuration}, I've been working with <strong>Truecaller</strong> across different teams
       in Stockholm, Sweden and Bengaluru, India. I am currently working in the Truecaller HQ at Stockholm,
       as a backend software engineer in Plaform/Cloud Infrastructure team, responsible for providing core
       tooling, services and infrastructure for the Truecaller developers in India, Sweden, Israel & Poland.
