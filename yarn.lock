@@ -958,10 +958,10 @@ typescript@^5.7.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.3.tgz#919b44a7dbb8583a9b856d162be24a54bf80073e"
   integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
 
-vite@^5.4.7:
-  version "5.4.7"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.7.tgz#d226f57c08b61379e955f3836253ed3efb2dcf00"
-  integrity sha512-5l2zxqMEPVENgvzTuBpHer2awaetimj2BGkhBPdnwKbPNOlHsODU+oiazEZzLK7KhAnOrO+XGYJYn4ZlUhDtDQ==
+vite@^5.4.12:
+  version "5.4.12"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.12.tgz#627d12ff06de3942557dfe8632fd712a12a072c7"
+  integrity sha512-KwUaKB27TvWwDJr1GjjWthLMATbGEbeWYZIbGZ5qFIsgPP3vWzLu4cVooqhm5/Z2SPDUMjyPVjTztm5tYKwQxA==
   dependencies:
     esbuild "^0.21.3"
     postcss "^8.4.43"
