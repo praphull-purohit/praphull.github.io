@@ -19,7 +19,7 @@
     "@sveltejs/kit": "^2.19.0",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "bulma": "^0.9.4",
-    "sass": "^1.85.1",
+    "sass": "^1.86.0",
     "svelte": "^4.2.19",
     "svelte-check": "^4.1.4",
     "svelte-preprocess": "^6.0.3",
