@@ -21,7 +21,7 @@
     "bulma": "^0.9.4",
     "sass": "^1.86.3",
     "svelte": "^4.2.19",
-    "svelte-check": "^4.1.6",
+    "svelte-check": "^4.1.7",
     "svelte-preprocess": "^6.0.3",
     "tslib": "^2.8.1",
     "typescript": "^5.8.3",
